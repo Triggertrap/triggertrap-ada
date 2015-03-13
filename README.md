@@ -13,15 +13,16 @@ Ada source code
 7. Ada project files
 8. EEPROM addresses
 9. Creating a new mode
+10. Notes on building firmware
 
 
 ##1. About Triggertrap Ada
 
-Ada is a project created by Triggertrap (http://triggertrap.com), designed to be the world's fastest and easiest to use high-speed camera trigger. An initial prototype was created for a Kickstarter project (tri.gg/kickstarter2), and a significant of additional work was completed in order to bring the product to market. 
+Ada is a project created by Triggertrap (triggertrap.com), designed to be the world's fastest and easiest to use high-speed camera trigger. An initial prototype was created for a Kickstarter project (tri.gg/kickstarter2), and a significant of additional work was completed in order to bring the product to market. 
 
 Triggertrap was unsuccessful in putting Ada into production, but are releasing the work completed under a GPLv3 open source licence. For full information about where to find all open-source parts of Ada, please see: http://tri.gg/adasource
 
-The electronics and firmware for Ada was developed by Cubik Innovation (http://cubik-innovation.co.uk). Some additional changes to the firmware was done by Nick Johnson of Arachnid Labs (http://arachnidlabs.com). 
+The electronics and firmware for Ada was developed by Cubik Innovation (cubik-innovation.co.uk). Some additional changes to the firmware was done by Nick Johnson of Arachnid Labs (arachnidlabs.com). 
 
 For discussion about this source code, please see the Triggertrap Ada forum - http://forum.triggertrap.com/categories/triggertrap-ada
 
@@ -72,7 +73,7 @@ TC_driver.h
 * Timer and counter driver files
 
 
-## 5. Arduino Libraries
+## 6. Arduino Libraries
 
 Arduino.h
 
@@ -319,7 +320,7 @@ TimeWarp.cpp
 
 * Contains the functions related to the timewarp mode
  
-## 7. EEPROM addresses
+## 8. EEPROM addresses
 
 EEPROM locations are referenced in the code using their labels, however the absolute addresses may be found in eeprom_addresses.h
 
@@ -860,7 +861,7 @@ EEPROM_NONE
 * Null
 
 
-##8. Creating a new mode
+##9. Creating a new mode
 
 * Examples on how to include a new mode have been given in this project. The user must add in the definition: 
 
@@ -870,3 +871,5 @@ define INCLUDE_NEWMODE
 * 
 * Further information on how to make your own mode can be found in the comments of NewMode.cpp
 
+##10. Notes on building firmware
+The Baseblock firmware has been updated so it can be built using avr-gcc and make, however both the Bootloader and the Sensor firmware have not been converted to allow for this process. 
