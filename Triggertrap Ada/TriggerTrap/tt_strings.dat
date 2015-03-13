@@ -1,0 +1,326 @@
+/*
+ * tt_strings.cpp
+ *
+ * Created: 19/06/2014 11:26:08
+ *  Author: philip.kirkpatrick
+ */ 
+
+#include <avr/pgmspace.h>
+
+const char string_0[] PROGMEM = "";
+const char string_1[] PROGMEM = "COUNT";
+const char string_2[] PROGMEM = "IS";
+const char string_3[] PROGMEM = "FUNCTION";
+const char string_4[] PROGMEM = "SETUP";
+const char string_5[] PROGMEM = "QUADRATIC";
+const char string_6[] PROGMEM = "QUARTIC";
+const char string_7[] PROGMEM = "QUINTIC";
+const char string_8[] PROGMEM = "<CANCEL";
+const char string_9[] PROGMEM = "DONE";
+const char string_10[] PROGMEM = "CAMERA";
+const char string_11[] PROGMEM = "PREFOCUS";
+const char string_12[] PROGMEM = "SHUTTER";
+const char string_13[] PROGMEM = "PULSE";
+const char string_14[] PROGMEM = "FLASH";
+const char string_15[] PROGMEM = "TRIGGER";
+const char string_16[] PROGMEM = " ON";
+const char string_17[] PROGMEM = "ALL";
+const char string_18[] PROGMEM = "ANY";
+const char string_19[] PROGMEM = "CLOSE";
+const char string_20[] PROGMEM = "SHUTTER?";
+const char string_21[] PROGMEM = "NO";
+const char string_22[] PROGMEM = "YES";
+const char string_23[] PROGMEM = "OPEN";
+const char string_24[] PROGMEM = "1";
+const char string_25[] PROGMEM = "TIMELAPSE";
+const char string_26[] PROGMEM = "2";
+const char string_27[] PROGMEM = "TIMEWARP";
+const char string_28[] PROGMEM = "3";
+const char string_29[] PROGMEM = "BULB";
+const char string_30[] PROGMEM = "RAMPING";
+const char string_31[] PROGMEM = "4";
+const char string_32[] PROGMEM = "STAR";
+const char string_33[] PROGMEM = "TRAIL";
+const char string_34[] PROGMEM = "5";
+const char string_35[] PROGMEM = "HIGH SPEED";
+const char string_36[] PROGMEM = "FLASH";
+const char string_37[] PROGMEM = "6";
+const char string_38[] PROGMEM = "SENSOR";
+const char string_39[] PROGMEM = "7";
+const char string_40[] PROGMEM = "8";
+const char string_41[] PROGMEM = "VIDEO";
+const char string_42[] PROGMEM = "9";
+const char string_43[] PROGMEM = "ADVANCED";
+const char string_44[] PROGMEM = "10";
+const char string_45[] PROGMEM = "LE HDR";
+const char string_46[] PROGMEM = "START";
+const char string_47[] PROGMEM = "< STOP";
+const char string_48[] PROGMEM = "POWER OFF";
+const char string_49[] PROGMEM = "SETTINGS";
+const char string_50[] PROGMEM = "SETTINGS\x01";
+const char string_51[] PROGMEM = "SENSOR TL";
+const char string_52[] PROGMEM = "INTERVAL";
+const char string_53[] PROGMEM = "START DELAY";
+const char string_54[] PROGMEM = "DIRECTION";
+const char string_55[] PROGMEM = "WAIT BEFORE";
+const char string_56[] PROGMEM = "START IS";
+const char string_57[] PROGMEM = "DURATION";
+const char string_58[] PROGMEM = "EXPOSURE IS";
+const char string_59[] PROGMEM = "1/15 S";
+const char string_60[] PROGMEM = "1/13 S";
+const char string_61[] PROGMEM = "1/10 S";
+const char string_62[] PROGMEM = " 1/8 S";
+const char string_63[] PROGMEM = " 1/6 S";
+const char string_64[] PROGMEM = " 1/5 S";
+const char string_65[] PROGMEM = " 1/4 S";
+const char string_66[] PROGMEM = " 0.3 S";
+const char string_67[] PROGMEM = " 0.4 S";
+const char string_68[] PROGMEM = " 0.5 S";
+const char string_69[] PROGMEM = " 0.6 S";
+const char string_70[] PROGMEM = " 0.8 S";
+const char string_71[] PROGMEM = " 1.0 S";
+const char string_72[] PROGMEM = " 1.3 S";
+const char string_73[] PROGMEM = " 1.6 S";
+const char string_74[] PROGMEM = " 2.0 S";
+const char string_75[] PROGMEM = " 2.5 S";
+const char string_76[] PROGMEM = " 3.2 S";
+const char string_77[] PROGMEM = " 4.0 S";
+const char string_78[] PROGMEM = " 5.0 S";
+const char string_79[] PROGMEM = " 6.0 S";
+const char string_80[] PROGMEM = " 8.0 S";
+const char string_81[] PROGMEM = "10.0 S";
+const char string_82[] PROGMEM = "13.0 S";
+const char string_83[] PROGMEM = "15.0 S";
+const char string_84[] PROGMEM = "20.0 S";
+const char string_85[] PROGMEM = "25.0 S";
+const char string_86[] PROGMEM = "30.0 S";
+const char string_87[] PROGMEM = "IN";
+const char string_88[] PROGMEM = "OUT";
+const char string_89[] PROGMEM = "IN-OUT";
+const char string_90[] PROGMEM = "OUT-IN";
+const char string_91[] PROGMEM = "SYSTEM TIME";
+const char string_92[] PROGMEM = "BRAMPING";
+const char string_93[] PROGMEM = "END";
+const char string_94[] PROGMEM = " NO";
+const char string_95[] PROGMEM = "SETTING";
+const char string_96[] PROGMEM = "SHUTTER";
+const char string_97[] PROGMEM = "CYCLING";
+const char string_98[] PROGMEM = "DELAY";
+const char string_99[] PROGMEM = "RESET";
+const char string_100[] PROGMEM = "ACTIVE";
+const char string_101[] PROGMEM = "ALWAYS";
+const char string_102[] PROGMEM = "TIME";
+const char string_103[] PROGMEM = "TIMES ";
+const char string_104[] PROGMEM = "SENSOR VIDEO";
+const char string_105[] PROGMEM = "STOP AFTER";
+const char string_106[] PROGMEM = "ACTIVITY";
+const char string_107[] PROGMEM = "CAMERA";
+const char string_108[] PROGMEM = "MOBILE";
+const char string_109[] PROGMEM = "BOTH";
+const char string_110[] PROGMEM = "TRIGGER";
+const char string_111[] PROGMEM = "SET";
+const char string_112[] PROGMEM = "STAR TRAIL";
+const char string_113[] PROGMEM = "SPEED";
+const char string_114[] PROGMEM = "MIDDLE";
+const char string_115[] PROGMEM = "11";
+const char string_116[] PROGMEM = "13";
+const char string_117[] PROGMEM = "15";
+const char string_118[] PROGMEM = "1/3";
+const char string_119[] PROGMEM = "1/2";
+const char string_120[] PROGMEM = "EV PER";
+const char string_121[] PROGMEM = "SHOT";
+const char string_122[] PROGMEM = "SHOTS";
+const char string_123[] PROGMEM = "TRIGGER";
+const char string_124[] PROGMEM = "RESET";
+const char string_125[] PROGMEM = "TRIGGER ON";
+const char string_126[] PROGMEM = "TIMES ACTIVE";
+const char string_127[] PROGMEM = "OFF";
+const char string_128[] PROGMEM = "INPUT";
+const char string_129[] PROGMEM = "OUTPUT";
+const char string_130[] PROGMEM = "SENSOR TL";
+const char string_131[] PROGMEM = "CONTINUE";
+const char string_132[] PROGMEM = "SENSOR STOP";
+const char string_133[] PROGMEM = "  INFINITE ";
+const char string_134[] PROGMEM = "  X SHOTS  ";
+const char string_135[] PROGMEM = "CHANNEL 1A";
+const char string_136[] PROGMEM = "CHANNEL 1B";
+const char string_137[] PROGMEM = "CHANNEL 2A";
+const char string_138[] PROGMEM = "CHANNEL 2B";
+const char string_139[] PROGMEM = "CHANNEL 3A";
+const char string_140[] PROGMEM = "CHANNEL 3B";
+const char string_141[] PROGMEM = "PULSE DURA";
+const char string_142[] PROGMEM = "ADV. SENSOR";
+const char string_143[] PROGMEM = "EXPOSURE";
+const char string_144[] PROGMEM = "11.04";
+const char string_145[] PROGMEM = "VERSION";
+const char string_146[] PROGMEM = "SETTINGS     5";
+const char string_147[] PROGMEM = "<MENU";
+const char string_148[] PROGMEM = "LOW";
+const char string_149[] PROGMEM = "BATTERY";
+
+#ifdef INCLUDE_NEWMODE
+const char string_150[] PROGMEM = "NEW MODE";
+const char string_151[] PROGMEM = "ON";
+#endif
+
+
+
+PGM_P const g_guimenu_stringtable[] PROGMEM =
+{
+	string_0,							// NULL string
+	string_1,							// GUIMENU_COUNT_TEXT
+	string_2,							// GUIMENU_IS_SELECTOR_TEXT2
+	string_3,							// GUIMENU_TIMEWARP_SELECTOR_TEXT1
+	string_4,							// GUIMENU_SETUP
+	string_5,							// GUIMENU_TIMEWARP_FN1
+	string_6,							// GUIMENU_TIMEWARP_FN2
+	string_7,							// GUIMENU_TIMEWARP_FN3
+	string_8,							// GUIMENU_CANCEL
+	string_9,							// GUIMENU_DONE
+	string_10,							// GUIMENU_CAMERA_PREFOCUS_TEXT1
+	string_11,							// GUIMENU_CAMERA_PREFOCUS_TEXT2
+	string_12,							// GUIMENU_SHUTTER_TEXT
+	string_13,							// GUIMENU_PULSE_TEXT2
+	string_14,							// GUIMENU_FLASH_PULSE_TEXT1
+	string_15,							// GUIMENU_TRIGGER_ON_TEXT1
+	string_16,							// GUIMENU_TRIGGER_ON_TEXT2
+	string_17,							// GUIMENU_ALL_TEXT
+	string_18,							// GUIMENU_ANY_TEXT
+	string_19,							// GUIMENU_CLOSE_SHUTTER_TEXT1
+	string_20,							// GUIMENU_CLOSE_SHUTTER_TEXT2
+	string_21,							// GUIMENU_NO_TEXT
+	string_22,							// GUIMENU_YES_TEXT
+	string_23,							// GUIMENU_OPEN
+	string_24,							// GUIMENU_ONE
+	string_25,							// GUIMENU_TIMELAPSE
+	string_26,							// GUIMENU_TWO
+	string_27,							// GUIMENU_TIMEWARP
+	string_28,							// GUIMENU_THREE
+	string_29,							// GUIMENU_BULB
+	string_30,							// GUIMENU_RAMPING
+	string_31,							// GUIMENU_FOUR
+	string_32,							// GUIMENU_STAR
+	string_33,							// GUIMENU_TRAIL
+	string_34,							// GUIMENU_FIVE
+	string_35,							// GUIMENU_HIGHSPEED
+	string_36,							// GUIMENU_FLASH
+	string_37,							// GUIMENU_SIX
+	string_38,							// GUIMENU_SENSOR
+	string_39,							// GUIMENU_SEVEN
+	string_40,							// GUIMENU_EIGHT
+	string_41,							// GUIMENU_VIDEO
+	string_42,							// GUIMENU_NINE
+	string_43,							// GUIMENU_ADVANCED
+	string_44,							// GUIMENU_TEN
+	string_45,							// GUIMENU_LEHDR
+	string_46,							// GUIMENU_START
+	string_47,							// GUIMENU_STOP
+	string_48,							// GUIMENU_POWEROFF
+	string_49,							// GUIMENU_SETTINGS
+	string_50,							// GUIMENU_MORE_SETTINGS
+	string_51,							// GUIMENU_SENSOR_TIMELAPSE
+	string_52,							// GUIMENU_INTERVAL
+	string_53,							// GUIMENU_STARTDELAY
+	string_54,							// GUIMENU_DIRECTION
+	string_55,							// GUIMENU_WAITBEFORE
+	string_56,							// GUIMENU_STARTIS
+	string_57,							// GUIMENU_DURATION
+	string_58,							// GUIMENU_EXPOSUREIS
+	string_59,							// GUIMENU_1D15
+	string_60,							// GUIMENU_1D13
+	string_61,							// GUIMENU_1D10
+	string_62,							// GUIMENU_1D8
+	string_63,							// GUIMENU_1D6
+	string_64,							// GUIMENU_1D5
+	string_65,							// GUIMENU_1D4
+	string_66,							// GUIMENU_0_3
+	string_67,							// GUIMENU_0_4
+	string_68,							// GUIMENU_0_5
+	string_69,							// GUIMENU_0_6
+	string_70,							// GUIMENU_0_8
+	string_71,							// GUIMENU_1_0
+	string_72,							// GUIMENU_1_3
+	string_73,							// GUIMENU_1_6
+	string_74,							// GUIMENU_2_0
+	string_75,							// GUIMENU_2_5
+	string_76,							// GUIMENU_3_2
+	string_77,							// GUIMENU_4_0
+	string_78,							// GUIMENU_5_0
+	string_79,							// GUIMENU_6_0
+	string_80,							// GUIMENU_8_0
+	string_81,							// GUIMENU_10_0
+	string_82,							// GUIMENU_13_0
+	string_83,							// GUIMENU_15_0
+	string_84,							// GUIMENU_20_0
+	string_85,							// GUIMENU_25_0
+	string_86,							// GUIMENU_30_0
+	string_87,							// GUIMENU_IN
+	string_88,							// GUIMENU_OUT
+	string_89,							// GUIMENU_INOUT
+	string_90,							// GUIMENU_OUTIN
+	string_91,							// GUIMENU_SYSTEMTIME
+	string_92,							// GUIMENU_BRAMPING
+	string_93,							// GUIMENU_END
+	string_94,							// GUIMENU_NO
+	string_95,							// GUIMENU_CONFIGURING
+	string_96,							// GUIMENU_SHUTTER
+	string_97,							// GUIMENU_CYCLING
+	string_98,							// GUIMENU_DELAY
+	string_99,							// GUIMENU_RESET
+	string_100,							// GUIMENU_ACTIVE
+	string_101,							// GUIMENU_ALWAYS
+	string_102,							// GUIMENU_TIME
+	string_103,							// GUIMENU_TIMES
+	string_104,							// GUIMENU_SENSORVIDEO
+	string_105,							// GUIMENU_STOPAFTER
+	string_106,							// GUIMENU_ACTIVITY
+	string_107,							// GUIMENU_CAMERA
+	string_108,							// GUIMENU_MOBILE
+	string_109,							// GUIMENU_BOTH
+	string_110,							// GUIMENU_TRIGGER
+	string_111,							// GUIMENU_SET
+	string_112,							// GUIMENU_STARTRAIL
+	string_113,							// GUIMENU_SPEED
+	string_114,							// GUIMENU_MIDDLE
+	string_115,							// GUIMENU_ELEVEN
+	string_116,							// GUIMENU_THIRTEEN
+	string_117,							// GUIMENU_FIFTEEN
+	string_118,							// GUIMENU_THIRD
+	string_119,							// GUIMENU_HALF
+	string_120,							// GUIMENU_EVPER
+	string_121,							// GUIMENU_SHOT
+	string_122,							// GUIMENU_SHOTS
+	string_123,							// GUIMENU_TRIGGER_DELAY
+	string_124,							// GUIMENU_RESET_DELAY
+	string_125,							// GUIMENU_TRIGGER_ON
+	string_126,							// GUIMENU_TIMES_ACTIVE	
+	string_127,							// GUIMENU_OFF		
+	string_128,							// GUIMENU_INPUT	
+	string_129,							// GUIMENU_OUTPUT					
+	string_130,							// GUIMENU_SENSOR_TL		
+	string_131,							// GUIMENU_CONTINUE	
+	string_132,							// GUIMENU_SENSOR_STOP
+	string_133,							// GUIMENU_INFINITE	
+	string_134,							// GUIMENU_X_SHOTS
+	string_135,							// GUIMENU_1A
+	string_136,							// GUIMENU_1B
+	string_137,							// GUIMENU_2A
+	string_138,							// GUIMENU_2B
+	string_139,							// GUIMENU_3A
+	string_140,							// GUIMENU_3B
+	string_141,							// GUIMENU_PULSE
+	string_142,							// GUIMENU_A_SENSOR		
+	string_143,							// GUIMENU_EXPO		
+	string_144,							// GUIMENU_VERSION_NUM		
+	string_145,							// GUIMENU_VERSION	
+	string_146,							// GUIMENU_SETTINGS1
+	string_147,							// GUIMENU_MENUBACK
+	string_148,							// GUIMENU_LOW
+	string_149,							// GUIMENU_BATTERY
+
+#ifdef INCLUDE_NEWMODE
+	string_150,							// GUIMENU_NEWMODE	
+	string_151,							// GUIMENU_ON
+#endif
+};
+

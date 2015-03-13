@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "TriggerTrap", "TriggerTrap\TriggerTrap.cppproj", "{ED7C5343-42D1-44C8-86FE-9E98A18C59C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED7C5343-42D1-44C8-86FE-9E98A18C59C7}.Debug|AVR.ActiveCfg = Debug|AVR
+		{ED7C5343-42D1-44C8-86FE-9E98A18C59C7}.Debug|AVR.Build.0 = Debug|AVR
+		{ED7C5343-42D1-44C8-86FE-9E98A18C59C7}.Release|AVR.ActiveCfg = Release|AVR
+		{ED7C5343-42D1-44C8-86FE-9E98A18C59C7}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

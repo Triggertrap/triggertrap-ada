@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ADC_READ	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	89;"	f	line:89
+AND	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	9;"	v	line:9
+DATA	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	9;"	v	line:9
+Delay10us	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\TimeDelay.h	59;"	p	line:59	signature:( UINT32 tenMicroSecondCounter )
+DelayMs	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\TimeDelay.h	80;"	p	line:80	signature:( UINT16 ms )
+END	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	9;"	v	line:9
+IN	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	8;"	v	line:8
+ISR	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	452;"	f	line:452
+LASER::RB3	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	11;"	d	line:11	file:
+LED::RA1	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	13;"	d	line:13	file:
+OPTION_SELECT	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	57;"	f	line:57
+OR	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	9;"	v	line:9
+OUTPUT	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	205;"	f	line:205
+PING	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	101;"	f	line:101
+STACK_IN::RB0	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	14;"	d	line:14	file:
+STACK_OUT::RB1	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	15;"	d	line:15	file:
+SWITCH::RB2	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	12;"	d	line:12	file:
+T	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	8;"	v	line:8
+Y	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	8;"	v	line:8
+Z	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	8;"	v	line:8
+_XTAL_FREQ::8000000	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	3;"	d	line:3	file:
+a	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	103;"	l	line:103
+adc	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	8;"	v	line:8
+adc1	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	9;"	v	line:9
+c	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	8;"	v	line:8
+count2	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	8;"	v	line:8
+count::c	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	16;"	d	line:16	file:
+delay	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	46;"	f	line:46
+delay1	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	84;"	f	line:84
+delay2	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	51;"	f	line:51
+i	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	8;"	v	line:8
+init	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	19;"	f	line:19
+interrupts	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	37;"	f	line:37
+main	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	260;"	f	line:260
+sensor::Z	G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software\Main.c	17;"	d	line:17	file:

@@ -1,0 +1,255 @@
+[p LITE_MODE AUTOSTATIC PIC12 PICREGULAR PIC12E PIC12IE PIC12COM ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F527 ]
+[d frameptr 6 ]
+"5 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c
+[v _laser laser `(v  1 e 0 0 ]
+"5 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c
+[v _light light `(v  1 e 0 0 ]
+"34 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c
+[v _main main `(v  1 e 0 0 ]
+"72
+[v _init init `(v  1 e 0 0 ]
+"89
+[v _option_select option_select `(v  1 e 0 0 ]
+"118
+[v _ping ping `(v  1 e 0 0 ]
+"5 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c
+[v _pir_mic pir_mic `(v  1 e 0 0 ]
+"7 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c
+[v _adc_read adc_read `(v  1 e 0 0 ]
+"18
+[v _poll_stack poll_stack `(v  1 e 0 0 ]
+"50
+[v _output output `(v  1 e 0 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.32\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.32\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files\Microchip\xc8\v1.32\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v1.32\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files\Microchip\xc8\v1.32\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files\Microchip\xc8\v1.32\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.32\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.32\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files\Microchip\xc8\v1.32\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files\Microchip\xc8\v1.32\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files\Microchip\xc8\v1.32\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files\Microchip\xc8\v1.32\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"49 C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+[s S19 . 1 `uc 1 sensor 1 0 :3:0 
+`uc 1 low_power 1 0 :1:3 
+]
+"23 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c
+[v _sensor_info sensor_info `S19  1 e 1 0 ]
+[s S22 . 1 `uc 1 AND 1 0 :1:0 
+`uc 1 OR 1 0 :1:1 
+`uc 1 END 1 0 :1:2 
+`uc 1 IN 1 0 :1:3 
+`uc 1 startup 1 0 :1:4 
+`uc 1 T 1 0 :1:5 
+`uc 1 Y 1 0 :1:6 
+`uc 1 laseroff 1 0 :1:7 
+]
+"24
+[v _sensor_config sensor_config `S22  1 e 1 0 ]
+"25
+[v _count count `ui  1 e 2 0 ]
+[v _count2 count2 `ui  1 e 2 0 ]
+"26
+[v _adc adc `uc  1 e 1 0 ]
+[s S85 . 1 `uc 1 RA 1 0 :6:0 
+]
+"278 C:/Program Files/Microchip/xc8/v1.32/include\pic16f527.h
+[s S87 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+[u S94 . 1 `S85 1 . 1 0 `S87 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES94  1 e 1 @6 ]
+[s S40 . 1 `uc 1 RC 1 0 :8:0 
+]
+"384
+[s S42 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S51 . 1 `S40 1 . 1 0 `S42 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES51  1 e 1 @8 ]
+"433
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @9 ]
+[s S318 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"460
+[s S323 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S332 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[u S335 . 1 `S318 1 . 1 0 `S323 1 . 1 0 `S332 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES335  1 e 1 @9 ]
+"524
+[v _ADRES ADRES `VEuc  1 e 1 @10 ]
+[s S110 . 1 `uc 1 nC2WU 1 0 :1:0 
+`uc 1 C2PREF1 1 0 :1:1 
+`uc 1 C2NREF 1 0 :1:2 
+`uc 1 C2ON 1 0 :1:3 
+`uc 1 C2PREF2 1 0 :1:4 
+`uc 1 C2POL 1 0 :1:5 
+`uc 1 nC2OUTEN 1 0 :1:6 
+`uc 1 C2OUT 1 0 :1:7 
+]
+"778
+[u S119 . 1 `S110 1 . 1 0 ]
+[v _CM1CON0bits CM1CON0bits `VES119  1 e 1 @39 ]
+"839
+[v _CM2CON0bits CM2CON0bits `VES119  1 e 1 @40 ]
+"964
+[v _ANSELbits ANSELbits `VES119  1 e 1 @42 ]
+"1232
+[v _OPTION OPTION `VWEuc  1 e 1 @0 ]
+"1235
+[v _TRISA TRISA `VWEuc  1 e 1 @6 ]
+"1238
+[v _TRISB TRISB `VWEuc  1 e 1 @7 ]
+"1241
+[v _TRISC TRISC `VWEuc  1 e 1 @8 ]
+"1361
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @73 ]
+"1387
+[v _RB5 RB5 `VEb  1 e 0 @61 ]
+"1389
+[v _RB6 RB6 `VEb  1 e 0 @62 ]
+"1403
+[v _RC5 RC5 `VEb  1 e 0 @69 ]
+"34 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"69
+} 0
+"5 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c
+[v _pir_mic pir_mic `(v  1 e 0 0 ]
+{
+[v pir_mic@reset_count reset_count `ui  1 p 2 2 ]
+[v pir_mic@low_thold low_thold `uc  1 p 1 4 ]
+[v pir_mic@high_thold high_thold `uc  1 p 1 5 ]
+"50
+} 0
+"118 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c
+[v _ping ping `(v  1 e 0 0 ]
+{
+"120
+[v ping@a a `ui  1 a 2 3 ]
+"260
+} 0
+"89
+[v _option_select option_select `(v  1 e 0 0 ]
+{
+"114
+} 0
+"5 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c
+[v _light light `(v  1 e 0 0 ]
+{
+"57
+} 0
+"5 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c
+[v _laser laser `(v  1 e 0 0 ]
+{
+"113
+} 0
+"18 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c
+[v _poll_stack poll_stack `(v  1 e 0 0 ]
+{
+"47
+} 0
+"50
+[v _output output `(v  1 e 0 0 ]
+{
+"106
+} 0
+"7
+[v _adc_read adc_read `(v  1 e 0 0 ]
+{
+"15
+} 0
+"72 G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c
+[v _init init `(v  1 e 0 0 ]
+{
+"85
+} 0

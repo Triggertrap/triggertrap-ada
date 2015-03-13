@@ -1,0 +1,12 @@
+_init: CODE, 50 0 13
+_ping: CODE, 198 0 314
+_option_select: CODE, 721 0 39
+_main: CODE, 881 0 67
+_poll_stack: CODE, 39 0 11
+_output: CODE, 948 0 75
+__initialization: ENTRY, 4 0 7
+_laser: CODE, 63 0 135
+_pir_mic: CODE, 760 0 59
+_adc_read: CODE, 710 0 11
+_light: CODE, 819 0 62
+Total: 793

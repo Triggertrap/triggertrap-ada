@@ -1,0 +1,638 @@
+
+# 1 "G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.0\Main.c"
+
+# 46 "C:\Program Files\HI-TECH Software\PICC\9.83\include\pic16f57.h"
+volatile control unsigned char OPTION @ 0x000;
+
+
+volatile unsigned char INDF @ 0x000;
+
+
+
+volatile unsigned char TMR0 @ 0x001;
+
+
+
+volatile unsigned char PCL @ 0x002;
+
+
+
+volatile unsigned char STATUS @ 0x003;
+
+volatile bit CARRY @ ((unsigned)&STATUS*8)+0;
+volatile bit DC @ ((unsigned)&STATUS*8)+1;
+volatile bit ZERO @ ((unsigned)&STATUS*8)+2;
+volatile bit nPD @ ((unsigned)&STATUS*8)+3;
+volatile bit nTO @ ((unsigned)&STATUS*8)+4;
+volatile bit PA0 @ ((unsigned)&STATUS*8)+5;
+volatile bit PA1 @ ((unsigned)&STATUS*8)+6;
+volatile bit PA2 @ ((unsigned)&STATUS*8)+7;
+
+volatile union {
+struct {
+unsigned C : 1;
+unsigned DC : 1;
+unsigned Z : 1;
+unsigned nPD : 1;
+unsigned nTO : 1;
+unsigned PA : 3;
+};
+struct {
+unsigned : 5;
+unsigned PA0 : 1;
+unsigned PA1 : 1;
+unsigned PA2 : 1;
+};
+} STATUSbits @ 0x003;
+
+
+
+volatile unsigned char FSR @ 0x004;
+
+
+
+volatile unsigned char PORTA @ 0x005;
+volatile control unsigned char TRISA @ 0x005;
+
+volatile bit RA0 @ ((unsigned)&PORTA*8)+0;
+volatile bit RA1 @ ((unsigned)&PORTA*8)+1;
+volatile bit RA2 @ ((unsigned)&PORTA*8)+2;
+volatile bit RA3 @ ((unsigned)&PORTA*8)+3;
+volatile bit T0CKI @ ((unsigned)&PORTA*8)+4;
+
+volatile union {
+struct {
+unsigned RA0 : 1;
+unsigned RA1 : 1;
+unsigned RA2 : 1;
+unsigned RA3 : 1;
+unsigned T0CKI : 1;
+};
+} PORTAbits @ 0x005;
+
+
+
+volatile unsigned char PORTB @ 0x006;
+volatile control unsigned char TRISB @ 0x006;
+
+volatile bit RB0 @ ((unsigned)&PORTB*8)+0;
+volatile bit RB1 @ ((unsigned)&PORTB*8)+1;
+volatile bit RB2 @ ((unsigned)&PORTB*8)+2;
+volatile bit RB3 @ ((unsigned)&PORTB*8)+3;
+volatile bit RB4 @ ((unsigned)&PORTB*8)+4;
+volatile bit RB5 @ ((unsigned)&PORTB*8)+5;
+volatile bit RB6 @ ((unsigned)&PORTB*8)+6;
+volatile bit RB7 @ ((unsigned)&PORTB*8)+7;
+
+volatile union {
+struct {
+unsigned RB0 : 1;
+unsigned RB1 : 1;
+unsigned RB2 : 1;
+unsigned RB3 : 1;
+unsigned RB4 : 1;
+unsigned RB5 : 1;
+unsigned RB6 : 1;
+unsigned RB7 : 1;
+};
+} PORTBbits @ 0x006;
+
+
+
+volatile unsigned char PORTC @ 0x007;
+volatile control unsigned char TRISC @ 0x007;
+
+volatile bit RC0 @ ((unsigned)&PORTC*8)+0;
+volatile bit RC1 @ ((unsigned)&PORTC*8)+1;
+volatile bit RC2 @ ((unsigned)&PORTC*8)+2;
+volatile bit RC3 @ ((unsigned)&PORTC*8)+3;
+volatile bit RC4 @ ((unsigned)&PORTC*8)+4;
+volatile bit RC5 @ ((unsigned)&PORTC*8)+5;
+volatile bit RC6 @ ((unsigned)&PORTC*8)+6;
+volatile bit RC7 @ ((unsigned)&PORTC*8)+7;
+
+volatile union {
+struct {
+unsigned RC0 : 1;
+unsigned RC1 : 1;
+unsigned RC2 : 1;
+unsigned RC3 : 1;
+unsigned RC4 : 1;
+unsigned RC5 : 1;
+unsigned RC6 : 1;
+unsigned RC7 : 1;
+};
+} PORTCbits @ 0x007;
+
+
+# 27 "C:\Program Files\HI-TECH Software\PICC\9.83\include\pic.h"
+#pragma inline(_nop)
+extern void _nop(void);
+
+
+# 153
+#pragma inline(_delay)
+extern void _delay(unsigned long);
+
+# 3 "G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.0\main.h"
+unsigned int c, i, Y, count2, Z, IN, T, adc, SPEED, laseroff, lasercount, ADCHIGH, ADCLOW;
+int adc1, DATA, AND, OR, END;
+
+# 15
+void init()
+{
+
+# 33
+PORTA =0;
+
+TRISA3 =1;
+PORTCbits =0;
+TRISCbits.TRISC2 =1;
+TRISCbits.TRISC5 =0;
+TRISCbits.TRISC1 =0;
+TRISCbits.TRISC7 =1;
+TRISCbits.TRISC6 =0;
+TRISCbits.TRISC4 =0;
+
+PORTBbits =0;
+TRISBbits.TRISB5 =1;
+TRISBbits.TRISB6 =1;
+
+
+}
+
+void interrupts()
+{
+INTCON0bits.GIE =0;
+INTCON1bits.WUR =0;
+}
+
+void delay()
+{
+for(i=1;i<2000;i++);
+}
+
+void delay2()
+{
+for(i=0;i<2500;i++);
+}
+
+void OPTION_SELECT()
+{
+delay();
+if(RB6 ==0)
+{
+if(RB5 ==0)
+{
+Z =1;
+}
+else
+{
+Z =2;
+}
+}
+else if(RB6 ==1)
+{
+if(RB5 ==0)
+{
+Z =3;
+}
+else
+{
+Z =4;
+}
+}
+}
+
+void delay1()
+{
+for(i=1;i<20000;i++);
+}
+
+void ADC_READ()
+{
+ADCON0 =0b10011000;
+ADCON0bits.ADON =1;
+_delay((unsigned long)((5)*(8000000/4000000.0)));
+ADCON0bits.GO_DONE =1;
+while(GO_DONE);
+ADON =0;
+_delay((unsigned long)((5)*(8000000/4000000.0)));
+adc =ADRESH;
+}
+
+void PING()
+{
+unsigned int a = 0;
+Y =0;
+c =0;
+PORTCbits.RC5 =0;
+TRISbits.TRISC1 =1;
+while(Y ==0)
+{
+if(PORTCbits.RC1 ==0)
+{
+Y =1;
+c++;
+while(PORTCbits.RC1 ==0);
+}
+}
+
+while(a <5120)
+{
+if(PORTCbits.RC1 ==0)
+{
+c++;
+a =5500;
+}
+a++;
+}
+if(c ==1)
+{
+AND =0;
+OR =1;
+}
+if(c ==2)
+{
+AND =1;
+OR =0;
+}
+if(AND ==1)
+{
+
+TRISA3 =0;
+PORTAbits.RA3 =0;
+delay2();
+PORTAbits.RA3 =1;
+delay2();
+PORTAbits.RA3 =0;
+delay2();
+PORTAbits.RA3 =1;
+TRISA3 =1;
+PORTCbits.RC5 =1;
+delay1();
+PORTCbits.RC5 =0;
+delay1();
+PORTCbits.RC5 =1;
+delay1();
+PORTCbits.RC5 =0;
+delay1();
+PORTCbits.RC5 =1;
+delay1();
+PORTCbits.RC5 =0;
+
+}
+if(OR ==1)
+{
+delay1();
+TRISA3 =0;
+PORTAbits.RA3 =0;
+delay2();
+PORTAbits.RA3 =1;
+TRISA3 =1;
+PORTCbits.RC5 =1;
+delay1();
+delay1();
+PORTCbits.RC5 =0;
+}
+TRISC1 =0;
+PORTCbits.RC1 =0;
+a =0;
+delay1();
+delay1();
+TRISA3 =1;
+END =0;
+while(a<15000)
+{
+if(PORTAbits.RA3 ==0)
+{
+c++;
+a =20000;
+}
+a++;
+}
+if(a <16000)
+{
+_delay((unsigned long)((250)*(8000000/4000.0)));
+PORTCbits.RC5 =1;
+delay1();
+PORTCbits.RC5 =0;
+delay1();
+PORTCbits.RC5 =1;
+delay1();
+PORTCbits.RC5 =0;
+delay1();
+PORTCbits.RC5 =1;
+delay1();
+PORTCbits.RC5 =0;
+END =1;
+
+}
+}
+
+void OUTPUT()
+{
+if(OR ==1)
+{
+if(T ==2)
+{
+PORTCbits.RC1 =0;
+PORTCbits.RC5 =1;
+}
+if((IN ==1) && (END !=1))
+{
+PORTCbits.RC1 =0;
+PORTCbits.RC5 =1;
+}
+}
+if(AND ==1)
+{
+if((T ==2) && ((IN ==1)|| ( PORTAbits.RA3 ==0)) && (END !=1))
+{
+TRISC1 =0;
+PORTCbits.RC1 =0;
+PORTCbits.RC5 =1;
+}
+if((END ==1) && (T ==2))
+{
+TRISC1 =0;
+PORTCbits.RC1 =0;
+PORTCbits.RC5 =1;
+}
+if(PORTAbits.RA3 ==1)
+{
+IN =0;
+PORTCbits.RC1 =1;
+}
+}
+if(Z ==4)
+{
+if(T ==2)
+{
+if(laseroff ==0)
+{
+if(PORTCbits.RC6 ==0)
+{
+_delay((unsigned long)((200)*(8000000/4000.0)));
+PORTCbits.RC6 =1;
+laseroff =1;
+}
+}
+}
+}
+}
+
+# 5 "G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.0\Main.c"
+void main()
+{
+init();
+OPTION_SELECT();
+END =0;
+c =0;
+RC5 =0;
+PING();
+Y =0;
+T =0;
+IN =0;
+TRISC1 =0;
+PORTCbits.RC1 =1;
+PORTCbits.RC5 =0;
+c =0;
+PORTCbits.RC4 =1;
+interrupts();
+if(END ==1)
+{
+INTE =0;
+INTF =0;
+}
+count2 =0;
+
+while(1)
+{
+
+
+
+while(Z ==1)
+{
+while(1)
+{
+c++;
+while(c <25000)
+{
+c++;
+if(c ==1500)
+{
+IN =0;
+T =0;
+PORTCbits.RC1 =1;
+PORTCbits.RC5 =0;
+}
+}
+ADC_READ();
+if(adc <112)
+{
+
+
+PORTCbits.RC5 =1;
+T =2;
+c =0;
+
+
+
+}
+if(adc >153)
+{
+
+
+PORTCbits.RC5 =1;
+T =2;
+c =0;
+
+
+
+}
+OUTPUT();
+}
+}
+
+
+
+while(Z ==2)
+{
+while(PORTCbits.RC7 ==0)
+{
+c++;
+if(c ==12500)
+{
+IN =0;
+T =0;
+PORTCbits.RC1 =1;
+PORTCbits.RC5 =0;
+}
+ADC_READ();
+if(adc >194)
+{
+PORTCbits.RC5 =1;
+T =2;
+c =0;
+}
+OUTPUT();
+}
+
+while(PORTCbits.RC7 ==1)
+{
+c++;
+if(c >=12500)
+{
+IN =0;
+T =0;
+PORTCbits.RC1 =1;
+PORTCbits.RC5 =0;
+}
+ADC_READ();
+if(adc <145)
+{
+PORTCbits.RC5 =1;
+T =2;
+c =0;
+}
+OUTPUT();
+}
+}
+
+
+
+while(Z ==3)
+{
+while(PORTCbits.RC7 ==0)
+{
+c++;
+if(c >=12500)
+{
+IN =0;
+T =0;
+PORTCbits.RC1 =1;
+PORTCbits.RC5 =0;
+}
+ADC_READ();
+if(adc >209)
+{
+PORTCbits.RC5 =1;
+T =2;
+c =0;
+}
+OUTPUT();
+}
+while(PORTCbits.RC7 ==1)
+{
+c++;
+if(c >=12500)
+{
+IN =0;
+T =0;
+PORTCbits.RC1 =1;
+PORTCbits.RC5 =0;
+}
+ADC_READ();
+if(adc <160)
+{
+PORTCbits.RC5 =1;
+T =2;
+c =0;
+}
+OUTPUT();
+}
+}
+
+
+
+while(Z ==4)
+{
+RBIE =0;
+PORTCbits.RC6 =1;
+c =0;
+laseroff =0;
+while(PORTCbits.RC7 ==0)
+{
+c++;
+if(c >=2)
+{
+IN =0;
+T =0;
+PORTCbits.RC5 =0;
+PORTCbits.RC1 =1;
+}
+ADC_READ();
+if(adc <203)
+{
+if(laseroff ==0)
+{
+PORTCbits.RC5 =1;
+T =2;
+PORTCbits.RC6 =0;
+c =0;
+}
+c =0;
+}
+else
+{
+laseroff =0;
+}
+OUTPUT();
+
+}
+laseroff =0;
+while(PORTCbits.RC7 ==1)
+{
+c++;
+if(c >=2)
+{
+IN =0;
+T =0;
+PORTCbits.RC1 =1;
+PORTCbits.RC5 =0;
+}
+ADC_READ();
+if(adc>203)
+{
+if(laseroff ==0)
+{
+PORTCbits.RC5 =1;
+T =2;
+PORTCbits.RC6 =0;
+}
+c =0;
+}
+else
+{
+laseroff =0;
+}
+OUTPUT();
+}
+}
+}
+}
+
+
+void interrupt ISR()
+{
+if(INTF ==1)
+{
+if((OR ==1) && (END !=1))
+{
+PORTCbits.RC1 =0;
+PORTCbits.RC5 =1;
+}
+if((AND ==1) && (T ==2))
+{
+PORTCbits.RC1 =0;
+PORTCbits.RC5 =1;
+}
+IN =1;
+INTE =0;
+INTF =0;
+INTE =1;
+c =0;
+}
+}
+

@@ -1,0 +1,605 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+end_init ENTRY 0 2 2 2 2
+reset_wrap ENTRY 0 0 0 2 2
+reset_vec CODE 0 3FF 3FF 1 2
+config CONFIG 0 FFF FFF 1 2
+$dist/default/production\TRIG.X.production.obj
+cinit ENTRY 0 4 4 A 2
+text9 CODE 0 32 32 D 2
+text8 CODE 0 2C6 2C6 B 2
+text7 CODE 0 3B4 3B4 4B 2
+text6 CODE 0 27 27 B 2
+text5 CODE 0 3F 3F 87 2
+text4 CODE 0 333 333 3E 2
+text3 CODE 0 2D1 2D1 27 2
+text2 CODE 0 C6 C6 13A 2
+jmp_tab ENTRY 0 E E 12 2
+text1 CODE 0 2F8 2F8 3B 2
+maintext CODE 0 371 371 43 2
+cstackBANK0 BANK0 1 17 17 6 1
+bssBANK0 BANK0 1 10 10 7 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 001D-001F 1
+BANK1 0030-003F 1
+BANK2 0050-005F 1
+BANK3 0070-007F 1
+CODE 0020-0026 2
+CODE 0200-02C5 2
+ENTRY 0020-0026 2
+ENTRY 0200-02C5 2
+IDLOC 0440-0443 2
+RAM 001D-001F 1
+RAM 0030-003F 1
+RAM 0050-005F 1
+RAM 0070-007F 1
+SFR0 0000-000B 1
+SFR1 0020-002F 1
+SFR2 0040-004F 1
+SFR3 0060-006F 1
+STACK 0030-003F 1
+STRCODE 0020-0026 2
+STRCODE 0200-02C5 2
+STRING 0020-0026 2
+STRING 0200-02C5 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\TRIG.X.production.obj
+"C:/Program Files/Microchip/xc8/v1.32/include\pic16f527.h":839 0 text0 CODE
+"C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.":390 4 cinit ENTRY
+"C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.":393 4 cinit ENTRY
+"C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.":415 4 cinit ENTRY
+"C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.":416 5 cinit ENTRY
+"C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.":417 6 cinit ENTRY
+"C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.":418 7 cinit ENTRY
+"C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.":419 8 cinit ENTRY
+"C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.":420 9 cinit ENTRY
+"C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.":421 A cinit ENTRY
+"C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.":427 B cinit ENTRY
+"C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.":428 B cinit ENTRY
+"C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.":429 C cinit ENTRY
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":5 E jmp_tab ENTRY
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":118 10 jmp_tab ENTRY
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":89 12 jmp_tab ENTRY
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":5 14 jmp_tab ENTRY
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":5 16 jmp_tab ENTRY
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":18 18 jmp_tab ENTRY
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":50 1A jmp_tab ENTRY
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":7 1C jmp_tab ENTRY
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":72 1E jmp_tab ENTRY
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":18 27 text6 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":20 27 text6 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":22 2A text6 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":24 2C text6 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":38 2E text6 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":39 2F text6 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":42 30 text6 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":45 31 text6 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":72 32 text9 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":74 32 text9 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":76 34 text9 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":78 36 text9 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":80 38 text9 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":82 3A text9 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":83 3C text9 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":84 3D text9 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":85 3E text9 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":5 3F text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":7 3F text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":9 3F text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":12 41 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":14 44 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":15 4D text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":17 56 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":19 5D text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":20 5E text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":21 5F text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":22 60 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":23 61 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":29 61 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":31 62 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":33 65 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":35 67 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":37 68 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":39 6C text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":41 6E text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":42 6F text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":43 70 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":44 72 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":46 73 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":49 74 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":50 76 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":53 77 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":54 78 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":57 79 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":59 7C text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":12 7F text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":62 80 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":65 81 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":67 84 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":68 8D text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":69 96 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":71 9D text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":72 9E text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":73 9F text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":74 A0 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":77 A1 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":78 A7 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":81 A8 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":83 A9 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":85 AC text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":86 AE text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":89 AF text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":91 B3 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":93 B5 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":94 B6 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":95 B7 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":97 B9 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":100 BA text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":101 BC text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":104 BD text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":105 BE text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":108 BF text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":110 C2 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/laser.c":65 C5 text5 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":118 C6 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":120 C6 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":121 C9 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":122 CB text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":123 CD text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":124 CE text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":125 CF text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":126 D1 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":127 D2 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":128 D3 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":129 D5 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":130 D6 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":131 D8 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":133 DA text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":134 DC text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":135 DD text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":136 DE text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":137 E2 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":142 E5 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":144 E7 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":145 E8 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":146 E9 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":147 ED text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":148 F1 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":150 F3 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":140 FC text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":182 103 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":184 108 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":185 10A text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":186 10B text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":187 114 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":188 116 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":189 118 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":190 119 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":191 125 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":193 127 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":195 12E text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":196 12F text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":197 138 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":198 13A text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":199 143 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":200 145 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":201 14E text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":216 150 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":217 152 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":218 153 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":219 160 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":220 162 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":222 167 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":223 174 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":224 176 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":225 183 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":226 185 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":227 192 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":228 194 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":229 1A1 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":231 1A3 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":233 1A3 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":234 1A5 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":235 1A6 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":236 1A8 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":237 1AA text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":238 1AC text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":239 1AE text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":240 1AF text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":241 1B0 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":242 1B2 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":244 1B9 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":245 1BB text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":247 1BF text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":242 1C8 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":249 1C9 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":251 1D0 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":252 1D1 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":253 1DE text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":254 1E0 text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":255 1ED text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":256 1EF text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":257 1FC text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":258 1FE text2 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":7 2C6 text8 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":9 2C6 text8 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":10 2C9 text8 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":11 2CA text8 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":12 2CB text8 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":13 2CD text8 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":14 2CE text8 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":15 2D0 text8 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":89 2D1 text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":91 2D1 text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":92 2DB text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":94 2DE text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":96 2E0 text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":97 2E4 text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":100 2E5 text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":102 2E9 text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":103 2EA text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":105 2EC text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":107 2EE text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":108 2F2 text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":111 2F3 text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":113 2F7 text3 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":5 2F8 text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":7 2F8 text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":9 2F8 text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":10 302 text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":13 30B text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":15 317 text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":16 318 text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":17 319 text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":18 31A text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":25 31B text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":27 31E text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":36 323 text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":38 327 text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":39 328 text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":40 32A text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":42 32B text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":46 32C text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":48 32F text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/pir_mic.c":7 332 text1 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":5 333 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":7 333 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":9 333 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":10 33D text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":12 346 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":14 34D text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":15 34E text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":16 34F text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":17 350 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":25 351 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":27 354 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":29 357 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":31 35B text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":32 35C text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":33 35E text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":35 360 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":41 361 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":43 365 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":44 366 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":45 368 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":47 369 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":52 36A text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":54 36D text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/light.c":7 370 text4 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":34 371 maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":36 371 maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":37 374 maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":38 377 maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":39 379 maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":40 37A maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":41 37B maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":44 37E maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":45 380 maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":49 381 maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":52 382 maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":53 38D maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":56 38E maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":57 39A maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":60 39B maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":61 39E maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":64 39F maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":66 3A2 maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":49 3A3 maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/Main.c":68 3B3 maintext CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":50 3B4 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":52 3B4 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":54 3B7 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":56 3B8 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":59 3B9 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":61 3BB text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":64 3BC text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":66 3BE text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":69 3C1 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":72 3C2 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":74 3C4 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":77 3C6 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":79 3C7 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":82 3C8 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":88 3C9 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":90 3CE text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":92 3D0 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":94 3D2 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":96 3D4 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":97 3DD text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":98 3E7 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":99 3F1 text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":100 3FB text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":101 3FD text7 CODE
+"G:\Active\Projects\TRI002\TRI002-Sensor Embedded\TRIG software PIR issue 2.5/utils.c":104 3FE text7 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__size_of_poll_stack 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+_RB5 3D 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+_RC5 45 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+_RB6 3E 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__S0 1000 0 ABS 0 - -
+__S1 1D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__Hintentry 4 0 ENTRY 0 intentry -
+__Lintentry 4 0 ENTRY 0 intentry -
+__CFG_CPSW$OFF 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+_adc 14 0 BANK0 1 bssBANK0 dist/default/production\TRIG.X.production.obj
+__end_of_init 7E 0 CODE 0 text9 dist/default/production\TRIG.X.production.obj
+entry__poll_stack 30 0 ENTRY 0 jmp_tab dist/default/production\TRIG.X.production.obj
+_ping 18C 0 CODE 0 text2 dist/default/production\TRIG.X.production.obj
+_main 6E2 0 CODE 0 maintext dist/default/production\TRIG.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+btemp C 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+ltemp C 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+ttemp C 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+wtemp C 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+_init 64 0 CODE 0 text9 dist/default/production\TRIG.X.production.obj
+_adc_read 58C 0 CODE 0 text8 dist/default/production\TRIG.X.production.obj
+start 4 0 ENTRY 0 init C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+__size_of_adc_read 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+pir_mic@high_thold 1C 0 BANK0 1 cstackBANK0 dist/default/production\TRIG.X.production.obj
+_TRISA 6 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+_TRISB 7 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+_TRISC 8 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+reset_vec 7FE 0 CODE 0 reset_vec C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+_ADRES A 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+ltemp0 C 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+ttemp0 C 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+wtemp0 C 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+ltemp1 10 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+ttemp1 F 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+wtemp1 E 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+ltemp2 14 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+ttemp2 12 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+wtemp2 10 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+ltemp3 E 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+ttemp3 15 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+wtemp3 12 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__size_of_init 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+ttemp4 D 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+wtemp4 14 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__size_of_laser 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+wtemp5 16 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+wtemp6 D 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__Hconfig 2000 0 CONFIG 0 config -
+__Lconfig 1FFE 0 CONFIG 0 config -
+__end_of_ping 400 0 CODE 0 text2 dist/default/production\TRIG.X.production.obj
+__end_of_option_select 5F0 0 CODE 0 text3 dist/default/production\TRIG.X.production.obj
+ping@a 1A 0 BANK0 1 cstackBANK0 dist/default/production\TRIG.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_laser 7E 0 CODE 0 text5 dist/default/production\TRIG.X.production.obj
+entry__pir_mic 1C 0 ENTRY 0 jmp_tab dist/default/production\TRIG.X.production.obj
+_light 666 0 CODE 0 text4 dist/default/production\TRIG.X.production.obj
+_count 10 0 BANK0 1 bssBANK0 dist/default/production\TRIG.X.production.obj
+__Hjmp_tab 0 0 ABS 0 jmp_tab -
+__Ljmp_tab 0 0 ABS 0 jmp_tab -
+__pjmp_tab 1C 0 ENTRY 0 jmp_tab dist/default/production\TRIG.X.production.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+__Lfunctab 0 0 ENTRY 0 functab -
+_ADCON0 9 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+___int_sp 0 0 STACK 2 stack C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+_OPTION 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+pir_mic@low_thold 1B 0 BANK0 1 cstackBANK0 dist/default/production\TRIG.X.production.obj
+_count2 12 0 BANK0 1 bssBANK0 dist/default/production\TRIG.X.production.obj
+__size_of_ping 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+_sensor_info 16 0 BANK0 1 bssBANK0 dist/default/production\TRIG.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 0 0 ABS 0 - C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 17 0 BANK0 1 cstackBANK0 dist/default/production\TRIG.X.production.obj
+stacklo 0 0 ABS 0 - C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+__Hinit 4 0 ENTRY 0 init -
+__Linit 4 0 ENTRY 0 init -
+__end_of_main 768 0 CODE 0 maintext dist/default/production\TRIG.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+__end_of_poll_stack 64 0 CODE 0 text6 dist/default/production\TRIG.X.production.obj
+_output 768 0 CODE 0 text7 dist/default/production\TRIG.X.production.obj
+end_of_initialization 16 0 ENTRY 0 cinit dist/default/production\TRIG.X.production.obj
+entry__option_select 24 0 ENTRY 0 jmp_tab dist/default/production\TRIG.X.production.obj
+_PORTAbits 6 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+_PORTCbits 8 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+_ANSELbits 2A 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__Hstrings 0 0 STRING 0 strings -
+__Lstrings 0 0 STRING 0 strings -
+_option_select 5A2 0 CODE 0 text3 dist/default/production\TRIG.X.production.obj
+entry__laser 2C 0 ENTRY 0 jmp_tab dist/default/production\TRIG.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__CFG_IOSCFS$8MHz 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 1 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__end_of_output 7FE 0 CODE 0 text7 dist/default/production\TRIG.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+_CM1CON0bits 27 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+_CM2CON0bits 28 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__ptext0 0 0 CODE 0 text0 dist/default/production\TRIG.X.production.obj
+__ptext1 5F0 0 CODE 0 text1 dist/default/production\TRIG.X.production.obj
+__ptext2 18C 0 CODE 0 text2 dist/default/production\TRIG.X.production.obj
+__ptext3 5A2 0 CODE 0 text3 dist/default/production\TRIG.X.production.obj
+__ptext4 666 0 CODE 0 text4 dist/default/production\TRIG.X.production.obj
+__ptext5 7E 0 CODE 0 text5 dist/default/production\TRIG.X.production.obj
+__ptext6 4E 0 CODE 0 text6 dist/default/production\TRIG.X.production.obj
+__ptext7 768 0 CODE 0 text7 dist/default/production\TRIG.X.production.obj
+entry__light 28 0 ENTRY 0 jmp_tab dist/default/production\TRIG.X.production.obj
+__ptext8 58C 0 CODE 0 text8 dist/default/production\TRIG.X.production.obj
+__ptext9 64 0 CODE 0 text9 dist/default/production\TRIG.X.production.obj
+__Hclrtext 1C 0 ENTRY 0 clrtext -
+__Lclrtext 1C 0 ENTRY 0 clrtext -
+_poll_stack 4E 0 CODE 0 text6 dist/default/production\TRIG.X.production.obj
+__end_of__initialization 16 0 ENTRY 0 cinit dist/default/production\TRIG.X.production.obj
+__size_of_option_select 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+entry__ping 20 0 ENTRY 0 jmp_tab dist/default/production\TRIG.X.production.obj
+_pir_mic 5F0 0 CODE 0 text1 dist/default/production\TRIG.X.production.obj
+__end_of_laser 18C 0 CODE 0 text5 dist/default/production\TRIG.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__Hspace_0 1000 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+__end_of_pir_mic 666 0 CODE 0 text1 dist/default/production\TRIG.X.production.obj
+__Hspace_1 1D 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Hcinit 1C 0 ENTRY 0 cinit -
+__Lcinit 8 0 ENTRY 0 cinit -
+__size_of_main 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__size_of_light 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__Hreset_wrap 4 0 ENTRY 0 reset_wrap -
+__Lreset_wrap 0 0 ENTRY 0 reset_wrap -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pbssBANK0 10 0 BANK0 1 bssBANK0 dist/default/production\TRIG.X.production.obj
+pir_mic@reset_count 19 0 BANK0 1 cstackBANK0 dist/default/production\TRIG.X.production.obj
+_ADCON0bits 9 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__CFG_DRTEN$OFF 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__Hend_init 8 0 ENTRY 0 end_init -
+__Lend_init 4 0 ENTRY 0 end_init -
+entry__init 3C 0 ENTRY 0 jmp_tab dist/default/production\TRIG.X.production.obj
+__end_of_adc_read 5A2 0 CODE 0 text8 dist/default/production\TRIG.X.production.obj
+_sensor_config 15 0 BANK0 1 bssBANK0 dist/default/production\TRIG.X.production.obj
+_GO_nDONE 49 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__Hreset_vec 800 0 CODE 0 reset_vec -
+__Lreset_vec 7FE 0 CODE 0 reset_vec -
+__end_of_light 6E2 0 CODE 0 text4 dist/default/production\TRIG.X.production.obj
+intlevel0 4 0 ENTRY 0 intentry C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+intlevel1 4 0 ENTRY 0 intentry C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+intlevel2 4 0 ENTRY 0 intentry C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+entry__adc_read 38 0 ENTRY 0 jmp_tab dist/default/production\TRIG.X.production.obj
+__size_of_output 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+intlevel3 4 0 ENTRY 0 intentry C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+intlevel4 4 0 ENTRY 0 intentry C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+entry__output 34 0 ENTRY 0 jmp_tab dist/default/production\TRIG.X.production.obj
+intlevel5 4 0 ENTRY 0 intentry C:\Users\PHILIP~1.KIR\AppData\Local\Temp\sd8k.obj
+start_initialization 8 0 ENTRY 0 cinit dist/default/production\TRIG.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext 6E2 0 CODE 0 maintext dist/default/production\TRIG.X.production.obj
+__size_of_pir_mic 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__initialization 8 0 ENTRY 0 cinit dist/default/production\TRIG.X.production.obj
+__CFG_FOSC$INTRC_IO 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\TRIG.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 C 4
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 3FF 7FE 1 2
+reset_wrap 0 0 0 20 2
+config 0 FFF 1FFE 1 2
+bssBANK0 1 10 10 D 1
+text2 0 C6 18C 13A 2
+text5 0 3F 7E 87 2
+text7 0 3B4 768 4B 2
+maintext 0 371 6E2 43 2
+text4 0 333 666 3E 2
+text1 0 2F8 5F0 3B 2
+text3 0 2D1 5A2 27 2
+text9 0 32 64 D 2
+text6 0 27 4E B 2
+text8 0 2C6 58C B 2

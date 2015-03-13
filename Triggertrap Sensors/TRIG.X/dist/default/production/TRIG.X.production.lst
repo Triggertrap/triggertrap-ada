@@ -1,0 +1,2395 @@
+
+
+Microchip Technology PIC LITE Macro Assembler V1.32 build 58300 
+                                                                                               Wed Oct 22 14:18:45 2014
+
+Microchip Technology Omniscient Code Generator (Lite mode) build 58300
+     1                           	processor	16F527
+     2                           	opt	pw 120
+     3                           	opt	lm
+     4                           	psect	text0,local,class=CODE,merge=1,delta=2
+     5                           	psect	cinit,global,class=ENTRY,merge=1,delta=2
+     6                           	psect	bssBANK0,global,class=BANK0,space=1,delta=1
+     7                           	psect	cstackBANK0,global,class=BANK0,space=1,delta=1
+     8                           	psect	maintext,global,class=CODE,split=1,delta=2
+     9                           	psect	text1,local,class=CODE,merge=1,delta=2
+    10                           	psect	jmp_tab,global,class=ENTRY,delta=2
+    11                           	psect	text2,local,class=CODE,merge=1,delta=2
+    12                           	psect	text3,local,class=CODE,merge=1,delta=2
+    13                           	psect	text4,local,class=CODE,merge=1,delta=2
+    14                           	psect	text5,local,class=CODE,merge=1,delta=2
+    15                           	psect	text6,local,class=CODE,merge=1,delta=2
+    16                           	psect	text7,local,class=CODE,merge=1,delta=2
+    17                           	psect	text8,local,class=CODE,merge=1,delta=2
+    18                           	psect	text9,local,class=CODE,merge=1,delta=2
+    19                           	dabs	1,0xC,4
+    20  0000                     	;# 
+    21  0001                     	;# 
+    22  0002                     	;# 
+    23  0003                     	;# 
+    24  0004                     	;# 
+    25  0005                     	;# 
+    26  0006                     	;# 
+    27  0007                     	;# 
+    28  0008                     	;# 
+    29  0009                     	;# 
+    30  000A                     	;# 
+    31  000B                     	;# 
+    32  000B                     	;# 
+    33  0021                     	;# 
+    34  0025                     	;# 
+    35  0026                     	;# 
+    36  0027                     	;# 
+    37  0028                     	;# 
+    38  0029                     	;# 
+    39  002A                     	;# 
+    40  0061                     	;# 
+    41  0065                     	;# 
+    42  0065                     	;# 
+    43  0066                     	;# 
+    44  0067                     	;# 
+    45  0068                     	;# 
+    46  0069                     	;# 
+    47  0000                     	;# 
+    48  0001                     	;# 
+    49  0002                     	;# 
+    50  0003                     	;# 
+    51  0004                     	;# 
+    52  0005                     	;# 
+    53  0006                     	;# 
+    54  0007                     	;# 
+    55  0008                     	;# 
+    56  0009                     	;# 
+    57  000A                     	;# 
+    58  000B                     	;# 
+    59  000B                     	;# 
+    60  0021                     	;# 
+    61  0025                     	;# 
+    62  0026                     	;# 
+    63  0027                     	;# 
+    64  0028                     	;# 
+    65  0029                     	;# 
+    66  002A                     	;# 
+    67  0061                     	;# 
+    68  0065                     	;# 
+    69  0065                     	;# 
+    70  0066                     	;# 
+    71  0067                     	;# 
+    72  0068                     	;# 
+    73  0069                     	;# 
+    74  0000                     	;# 
+    75  0001                     	;# 
+    76  0002                     	;# 
+    77  0003                     	;# 
+    78  0004                     	;# 
+    79  0005                     	;# 
+    80  0006                     	;# 
+    81  0007                     	;# 
+    82  0008                     	;# 
+    83  0009                     	;# 
+    84  000A                     	;# 
+    85  000B                     	;# 
+    86  000B                     	;# 
+    87  0021                     	;# 
+    88  0025                     	;# 
+    89  0026                     	;# 
+    90  0027                     	;# 
+    91  0028                     	;# 
+    92  0029                     	;# 
+    93  002A                     	;# 
+    94  0061                     	;# 
+    95  0065                     	;# 
+    96  0065                     	;# 
+    97  0066                     	;# 
+    98  0067                     	;# 
+    99  0068                     	;# 
+   100  0069                     	;# 
+   101  0000                     	;# 
+   102  0001                     	;# 
+   103  0002                     	;# 
+   104  0003                     	;# 
+   105  0004                     	;# 
+   106  0005                     	;# 
+   107  0006                     	;# 
+   108  0007                     	;# 
+   109  0008                     	;# 
+   110  0009                     	;# 
+   111  000A                     	;# 
+   112  000B                     	;# 
+   113  000B                     	;# 
+   114  0021                     	;# 
+   115  0025                     	;# 
+   116  0026                     	;# 
+   117  0027                     	;# 
+   118  0028                     	;# 
+   119  0029                     	;# 
+   120  002A                     	;# 
+   121  0061                     	;# 
+   122  0065                     	;# 
+   123  0065                     	;# 
+   124  0066                     	;# 
+   125  0067                     	;# 
+   126  0068                     	;# 
+   127  0069                     	;# 
+   128  0000                     	;# 
+   129  0001                     	;# 
+   130  0002                     	;# 
+   131  0003                     	;# 
+   132  0004                     	;# 
+   133  0005                     	;# 
+   134  0006                     	;# 
+   135  0007                     	;# 
+   136  0008                     	;# 
+   137  0009                     	;# 
+   138  000A                     	;# 
+   139  000B                     	;# 
+   140  000B                     	;# 
+   141  0021                     	;# 
+   142  0025                     	;# 
+   143  0026                     	;# 
+   144  0027                     	;# 
+   145  0028                     	;# 
+   146  0029                     	;# 
+   147  002A                     	;# 
+   148  0061                     	;# 
+   149  0065                     	;# 
+   150  0065                     	;# 
+   151  0066                     	;# 
+   152  0067                     	;# 
+   153  0068                     	;# 
+   154  0069                     	;# 
+   155  0009                     _ADCON0	set	9
+   156  0009                     _ADCON0bits	set	9
+   157  000A                     _ADRES	set	10
+   158  0000                     _OPTION	set	0
+   159  0006                     _PORTAbits	set	6
+   160  0008                     _PORTCbits	set	8
+   161  0006                     _TRISA	set	6
+   162  0007                     _TRISB	set	7
+   163  0008                     _TRISC	set	8
+   164  0049                     _GO_nDONE	set	73
+   165  003D                     _RB5	set	61
+   166  003E                     _RB6	set	62
+   167  0045                     _RC5	set	69
+   168  002A                     _ANSELbits	set	42
+   169  0027                     _CM1CON0bits	set	39
+   170  0028                     _CM2CON0bits	set	40
+   171                           
+   172                           	psect	text0
+   173  000                     __ptext0:	
+   174                           ; #config settings
+   175                           
+   176                           
+   177                           ;psect for function _init
+   178  0000                     
+   179                           	psect	cinit
+   180  004                     start_initialization:	
+   181  004                     __initialization:	
+   182                           
+   183                           ; Clear objects allocated to BANK0
+   184  004  070                	clrf	__pbssBANK0& (0+31)
+   185  005  071                	clrf	(__pbssBANK0+1)& (0+31)
+   186  006  072                	clrf	(__pbssBANK0+2)& (0+31)
+   187  007  073                	clrf	(__pbssBANK0+3)& (0+31)
+   188  008  074                	clrf	(__pbssBANK0+4)& (0+31)
+   189  009  075                	clrf	(__pbssBANK0+5)& (0+31)
+   190  00A  076                	clrf	(__pbssBANK0+6)& (0+31)
+   191  00B                     end_of_initialization:	
+   192                           ;End of C runtime variable initialization code
+   193                           
+   194  00B                     __end_of__initialization:	
+   195  00B  010                	movlb	0
+   196  00C  5A3  B71           	ljmp	_main	;jump to C main() function
+   197                           
+   198                           	psect	bssBANK0
+   199  010                     __pbssBANK0:	
+   200  010                     _count:	
+   201  010                     	ds	2
+   202  012                     _count2:	
+   203  012                     	ds	2
+   204  014                     _adc:	
+   205  014                     	ds	1
+   206  015                     _sensor_config:	
+   207  015                     	ds	1
+   208  016                     _sensor_info:	
+   209  016                     	ds	1
+   210                           
+   211                           	psect	cstackBANK0
+   212  017                     __pcstackBANK0:	
+   213  017                     ?_init:	
+   214  017                     ??_init:	
+   215                           ; 0 bytes @ 0x0
+   216                           
+   217  017                     ?_option_select:	
+   218                           ; 0 bytes @ 0x0
+   219                           
+   220  017                     ??_option_select:	
+   221                           ; 0 bytes @ 0x0
+   222                           
+   223  017                     ?_ping:	
+   224                           ; 0 bytes @ 0x0
+   225                           
+   226  017                     ??_ping:	
+   227                           ; 0 bytes @ 0x0
+   228                           
+   229  017                     ?_light:	
+   230                           ; 0 bytes @ 0x0
+   231                           
+   232  017                     ?_laser:	
+   233                           ; 0 bytes @ 0x0
+   234                           
+   235  017                     ?_adc_read:	
+   236                           ; 0 bytes @ 0x0
+   237                           
+   238  017                     ??_adc_read:	
+   239                           ; 0 bytes @ 0x0
+   240                           
+   241  017                     ?_poll_stack:	
+   242                           ; 0 bytes @ 0x0
+   243                           
+   244  017                     ??_poll_stack:	
+   245                           ; 0 bytes @ 0x0
+   246                           
+   247  017                     ?_output:	
+   248                           ; 0 bytes @ 0x0
+   249                           
+   250  017                     ??_output:	
+   251                           ; 0 bytes @ 0x0
+   252                           
+   253  017                     ?_main:	
+   254                           ; 0 bytes @ 0x0
+   255                           
+   256                           
+   257                           ; 0 bytes @ 0x0
+   258  017                     	ds	2
+   259  019                     ?_pir_mic:	
+   260  019                     ??_light:	
+   261                           ; 0 bytes @ 0x2
+   262                           
+   263  019                     ??_laser:	
+   264                           ; 0 bytes @ 0x2
+   265                           
+   266  019                     pir_mic@reset_count:	
+   267                           ; 0 bytes @ 0x2
+   268                           
+   269                           
+   270                           ; 2 bytes @ 0x2
+   271  019                     	ds	1
+   272  01A                     ping@a:	
+   273                           
+   274                           ; 2 bytes @ 0x3
+   275  01A                     	ds	1
+   276  01B                     pir_mic@low_thold:	
+   277                           
+   278                           ; 1 bytes @ 0x4
+   279  01B                     	ds	1
+   280  01C                     pir_mic@high_thold:	
+   281                           
+   282                           ; 1 bytes @ 0x5
+   283  01C                     	ds	1
+   284  01D                     ??_pir_mic:	
+   285  01D                     ??_main:	
+   286                           ; 0 bytes @ 0x6
+   287                           
+   288                           
+   289                           	psect	maintext
+   290  371                     __pmaintext:	
+   291                           ; 0 bytes @ 0x6
+   292 ;;
+   293 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+   294 ;;
+   295 ;; *************** function _main *****************
+   296 ;; Defined at:
+   297 ;;		line 34 in file "../Main.c"
+   298 ;; Parameters:    Size  Location     Type
+   299 ;;		None
+   300 ;; Auto vars:     Size  Location     Type
+   301 ;;		None
+   302 ;; Return value:  Size  Location     Type
+   303 ;;		None               void
+   304 ;; Registers used:
+   305 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+0, btemp+1, pclath, cstack
+   306 ;; Tracked objects:
+   307 ;;		On entry : 17F/0
+   308 ;;		On exit  : 0/0
+   309 ;;		Unchanged: 0/0
+   310 ;; Data sizes:      BANK0   BANK1   BANK3   BANK2  COMMON
+   311 ;;      Params:         0       0       0       0       0
+   312 ;;      Locals:         0       0       0       0       0
+   313 ;;      Temps:          0       0       0       0       0
+   314 ;;      Totals:         0       0       0       0       0
+   315 ;;Total ram usage:        0 bytes
+   316 ;; Hardware stack levels required when called:    2
+   317 ;; This function calls:
+   318 ;;		_init
+   319 ;;		_laser
+   320 ;;		_light
+   321 ;;		_option_select
+   322 ;;		_ping
+   323 ;;		_pir_mic
+   324 ;; This function is called by:
+   325 ;;		Startup code after reset
+   326 ;; This function uses a non-reentrant model
+   327 ;;
+   328                           
+   329                           
+   330                           ;psect for function _main
+   331  371                     _main:	
+   332                           
+   333                           ;Main.c: 36: init();
+   334                           
+   335                           ;incstack = 0
+   336                           ; Regs used in _main: [wreg-fsr0h+status,2-btemp+1+pclath+cstack]
+   337  371  4A3  91E  5A3      	fcall	entry__init
+   338                           
+   339                           ;Main.c: 37: option_select ();
+   340  374  4A3  912  5A3      	fcall	entry__option_select
+   341                           
+   342                           ;Main.c: 38: RC5 = 0;
+   343  377  010                	movlb	0	; select bank0
+   344  378  4A8                	bcf	8,5	;volatile
+   345                           
+   346                           ;Main.c: 39: sensor_info.low_power = 0;
+   347  379  476                	bcf	_sensor_info,3
+   348                           
+   349                           ;Main.c: 40: PORTCbits.RC6 = 0;
+   350  37A  4C8                	bcf	8,6	;volatile
+   351                           
+   352                           ;Main.c: 41: ping ();
+   353  37B  4A3  910  5A3      	fcall	entry__ping
+   354                           
+   355                           ;Main.c: 44: PORTCbits.RC1 = 1;
+   356  37E  010                	movlb	0	; select bank0
+   357  37F  528                	bsf	8,1	;volatile
+   358                           
+   359                           ;Main.c: 45: PORTCbits.RC4 = 1;
+   360  380  588                	bsf	8,4	;volatile
+   361                           
+   362                           ;Main.c: 49: switch (sensor_info.sensor)
+   363  381  BA3                	goto	l1002
+   364  382                     l992:	
+   365                           ;Main.c: 50: {
+   366                           ;Main.c: 51: case 1:
+   367                           
+   368                           
+   369                           ;Main.c: 52: pir_mic (750, 66, 188);
+   370  382  CEE                	movlw	238
+   371  383  039                	movwf	pir_mic@reset_count
+   372  384  C02                	movlw	2
+   373  385  03A                	movwf	pir_mic@reset_count+1
+   374  386  C42                	movlw	66
+   375  387  03B                	movwf	pir_mic@low_thold
+   376  388  CBC                	movlw	188
+   377  389  03C                	movwf	pir_mic@high_thold
+   378  38A  4A3  90E  5A3      	fcall	entry__pir_mic
+   379                           
+   380                           ;Main.c: 53: break;
+   381  38D  BB3                	goto	l58
+   382  38E                     l994:	
+   383                           ;Main.c: 55: case 2:
+   384                           
+   385                           
+   386                           ;Main.c: 56: pir_mic (250, 89, 178);
+   387  38E  CFA                	movlw	250
+   388  38F  010                	movlb	0	; select bank0
+   389  390  039                	movwf	pir_mic@reset_count
+   390  391  C00                	movlw	0
+   391  392  03A                	movwf	pir_mic@reset_count+1
+   392  393  C59                	movlw	89
+   393  394  03B                	movwf	pir_mic@low_thold
+   394  395  CB2                	movlw	178
+   395  396  03C                	movwf	pir_mic@high_thold
+   396  397  4A3  90E  5A3      	fcall	entry__pir_mic
+   397                           
+   398                           ;Main.c: 57: break;
+   399  39A  BB3                	goto	l58
+   400  39B                     l996:	
+   401                           ;Main.c: 59: case 3:
+   402                           
+   403                           
+   404                           ;Main.c: 60: light ();
+   405  39B  4A3  914  5A3      	fcall	entry__light
+   406                           
+   407                           ;Main.c: 61: break;
+   408  39E  BB3                	goto	l58
+   409  39F                     l998:	
+   410                           ;Main.c: 63: case 4:
+   411                           
+   412                           
+   413                           ;Main.c: 64: laser ();
+   414  39F  4A3  916  5A3      	fcall	entry__laser
+   415                           
+   416                           ;Main.c: 66: }
+   417                           
+   418                           ;Main.c: 65: break;
+   419  3A2  BB3                	goto	l58
+   420  3A3                     l1002:	
+   421  3A3  010                	movlb	0	; select bank0
+   422  3A4  216                	movf	_sensor_info,w
+   423  3A5  E07                	andlw	7
+   424                           
+   425                           ; Switch size 1, requested type "space"
+   426                           ; Number of cases is 4, Range of values is 1 to 4
+   427                           ; switch strategies available:
+   428                           ; Name         Instructions Cycles
+   429                           ; simple_byte           13     7 (average)
+   430                           ;	Chosen strategy is simple_byte
+   431  3A6  F01                	xorlw	1	; case 1
+   432  3A7  643                	skipnz
+   433  3A8  B82                	goto	l992
+   434  3A9  F03                	xorlw	3	; case 2
+   435  3AA  643                	skipnz
+   436  3AB  B8E                	goto	l994
+   437  3AC  F01                	xorlw	1	; case 3
+   438  3AD  643                	skipnz
+   439  3AE  B9B                	goto	l996
+   440  3AF  F07                	xorlw	7	; case 4
+   441  3B0  643                	skipnz
+   442  3B1  B9F                	goto	l998
+   443  3B2  BB3                	goto	l57
+   444  3B3                     l57:	
+   445                           ;Main.c: 68: while (1);
+   446                           
+   447  3B3                     l58:	
+   448  3B3  BB3                	goto	l58
+   449  3B4                     __end_of_main:	
+   450                           
+   451                           	psect	text1
+   452  2F8                     __ptext1:	
+   453 ;; *************** function _pir_mic *****************
+   454 ;; Defined at:
+   455 ;;		line 5 in file "../pir_mic.c"
+   456 ;; Parameters:    Size  Location     Type
+   457 ;;  reset_count     2    2[BANK0 ] unsigned int 
+   458 ;;  low_thold       1    4[BANK0 ] unsigned char 
+   459 ;;  high_thold      1    5[BANK0 ] unsigned char 
+   460 ;; Auto vars:     Size  Location     Type
+   461 ;;		None
+   462 ;; Return value:  Size  Location     Type
+   463 ;;		None               void
+   464 ;; Registers used:
+   465 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+0, btemp+1, pclath, cstack
+   466 ;; Tracked objects:
+   467 ;;		On entry : 0/0
+   468 ;;		On exit  : 0/0
+   469 ;;		Unchanged: 0/0
+   470 ;; Data sizes:      BANK0   BANK1   BANK3   BANK2  COMMON
+   471 ;;      Params:         4       0       0       0       0
+   472 ;;      Locals:         0       0       0       0       0
+   473 ;;      Temps:          0       0       0       0       0
+   474 ;;      Totals:         4       0       0       0       0
+   475 ;;Total ram usage:        4 bytes
+   476 ;; Hardware stack levels used:    1
+   477 ;; Hardware stack levels required when called:    1
+   478 ;; This function calls:
+   479 ;;		_adc_read
+   480 ;;		_output
+   481 ;;		_poll_stack
+   482 ;; This function is called by:
+   483 ;;		_main
+   484 ;; This function uses a non-reentrant model
+   485 ;;
+   486                           
+   487                           
+   488                           ;psect for function _pir_mic
+   489  2F8                     _pir_mic:	
+   490  2F8                     l240:	
+   491                           ;pir_mic.c: 7: while (1)
+   492                           
+   493                           
+   494                           ;pir_mic.c: 8: {
+   495                           ;pir_mic.c: 9: count++;
+   496  2F8  C01                	movlw	1
+   497  2F9  02C                	movwf	12
+   498  2FA  06D                	clrf	13
+   499  2FB  20C                	movf	12,w
+   500  2FC  010                	movlb	0	; select bank0
+   501  2FD  1F0                	addwf	_count,f
+   502  2FE  603                	skipnc
+   503  2FF  2B1                	incf	_count+1,f
+   504  300  20D                	movf	13,w
+   505  301  1F1                	addwf	_count+1,f
+   506                           
+   507                           ;pir_mic.c: 10: count2++;
+   508  302  C01                	movlw	1
+   509  303  02C                	movwf	12
+   510  304  06D                	clrf	13
+   511  305  20C                	movf	12,w
+   512  306  1F2                	addwf	_count2,f
+   513  307  603                	skipnc
+   514  308  2B3                	incf	_count2+1,f
+   515  309  20D                	movf	13,w
+   516  30A  1F3                	addwf	_count2+1,f
+   517                           
+   518                           ;pir_mic.c: 13: if (count >= reset_count)
+   519  30B  21A                	movf	pir_mic@reset_count+1,w
+   520  30C  02D                	movwf	13
+   521  30D  219                	movf	pir_mic@reset_count,w
+   522  30E  02C                	movwf	12
+   523  30F  20D                	movf	13,w
+   524  310  091                	subwf	_count+1,w
+   525  311  743                	skipz
+   526  312  B15                	goto	u335
+   527  313  20C                	movf	12,w
+   528  314  090                	subwf	_count,w
+   529  315                     u335:	
+   530  315  703                	skipc
+   531  316  B1B                	goto	l846
+   532                           
+   533                           ;pir_mic.c: 14: {
+   534                           ;pir_mic.c: 15: sensor_config.T = 0;
+   535  317  4B5                	bcf	_sensor_config,5
+   536                           
+   537                           ;pir_mic.c: 16: PORTCbits.RC1 = 1;
+   538  318  528                	bsf	8,1	;volatile
+   539                           
+   540                           ;pir_mic.c: 17: PORTCbits.RC5 = 0;
+   541  319  4A8                	bcf	8,5	;volatile
+   542                           
+   543                           ;pir_mic.c: 18: sensor_config.startup = 1;
+   544  31A  595                	bsf	_sensor_config,4
+   545  31B                     l846:	
+   546                           
+   547                           ;pir_mic.c: 19: }
+   548                           ;pir_mic.c: 25: adc_read ();
+   549  31B  4A3  91C  5A3      	fcall	entry__adc_read
+   550                           
+   551                           ;pir_mic.c: 27: if (adc < low_thold)
+   552  31E  010                	movlb	0	; select bank0
+   553  31F  21B                	movf	pir_mic@low_thold,w
+   554  320  094                	subwf	_adc,w
+   555  321  703                	btfss	3,0
+   556  322  B27                	goto	L1
+   557                           
+   558                           ;pir_mic.c: 36: else if (adc > high_thold)
+   559                           
+   560                           ;pir_mic.c: 34: }
+   561                           ;pir_mic.c: 35: }
+   562                           
+   563                           ;pir_mic.c: 32: {
+   564                           ;pir_mic.c: 33: sensor_config.T = 1;
+   565                           
+   566                           ;pir_mic.c: 31: if (sensor_config.startup == 1)
+   567                           
+   568                           ;pir_mic.c: 30: count = 0;
+   569                           
+   570                           ;pir_mic.c: 28: {
+   571                           ;pir_mic.c: 29: PORTCbits.RC5 = 1;
+   572  323  214                	movf	_adc,w
+   573  324  09C                	subwf	pir_mic@high_thold,w
+   574  325  603                	skipnc
+   575  326  B2C                	goto	l868
+   576  327                     L1:	
+   577                           
+   578                           ;pir_mic.c: 37: {
+   579                           ;pir_mic.c: 38: PORTCbits.RC5 = 1;
+   580  327  5A8                	bsf	8,5	;volatile
+   581                           
+   582                           ;pir_mic.c: 39: count = 0;
+   583  328  070                	clrf	_count
+   584  329  071                	clrf	_count+1
+   585                           
+   586                           ;pir_mic.c: 40: if (sensor_config.startup == 1)
+   587  32A  695                	btfsc	_sensor_config,4
+   588                           
+   589                           ;pir_mic.c: 41: {
+   590                           ;pir_mic.c: 42: sensor_config.T = 1;
+   591  32B  5B5                	bsf	_sensor_config,5
+   592  32C                     l868:	
+   593                           
+   594                           ;pir_mic.c: 43: }
+   595                           ;pir_mic.c: 44: }
+   596                           ;pir_mic.c: 46: poll_stack ();
+   597  32C  4A3  918  5A3      	fcall	entry__poll_stack
+   598                           
+   599                           ;pir_mic.c: 48: output ();
+   600  32F  4A3  91A  5A3      	fcall	entry__output
+   601  332  AF8                	goto	l240
+   602  333                     __end_of_pir_mic:	
+   603                           
+   604                           	psect	jmp_tab
+   605  00E                     __pjmp_tab:	
+   606                           ;incstack = 0
+   607                           ; Regs used in _pir_mic: [wreg-fsr0h+status,2-btemp+1+pclath+cstack]
+   608                           
+   609  00E                     entry__pir_mic:	
+   610  00E  5A3  AF8           	ljmp	_pir_mic
+   611  010                     entry__ping:	
+   612                           ;incstack = 0
+   613                           ; Regs used in _ping: [wreg-fsr0h+status,2+btemp+0+btemp+1]
+   614                           
+   615  010  4A3  AC6           	ljmp	_ping
+   616  012                     entry__option_select:	
+   617                           ;incstack = 0
+   618                           ; Regs used in _option_select: [wreg-fsr0h+status,2+status,0]
+   619                           
+   620  012  5A3  AD1           	ljmp	_option_select
+   621  014                     entry__light:	
+   622                           ;incstack = 0
+   623                           ; Regs used in _light: [wreg-fsr0h+status,2-btemp+1+pclath+cstack]
+   624                           
+   625  014  5A3  B33           	ljmp	_light
+   626  016                     entry__laser:	
+   627                           ;incstack = 0
+   628                           ; Regs used in _laser: [wreg-fsr0h+status,2-btemp+1+pclath+cstack]
+   629                           
+   630  016  4A3  A3F           	ljmp	_laser
+   631  018                     entry__poll_stack:	
+   632                           ;incstack = 0
+   633                           ; Regs used in _poll_stack: [fsr0]
+   634                           
+   635  018  4A3  A27           	ljmp	_poll_stack
+   636  01A                     entry__output:	
+   637                           ;incstack = 0
+   638                           ; Regs used in _output: [wreg-fsr0h+status,2+status,0]
+   639                           
+   640  01A  5A3  BB4           	ljmp	_output
+   641  01C                     entry__adc_read:	
+   642                           ;incstack = 0
+   643                           ; Regs used in _adc_read: [wregfsr0]
+   644                           
+   645  01C  5A3  AC6           	ljmp	_adc_read
+   646  01E                     entry__init:	
+   647                           ;incstack = 0
+   648                           ; Regs used in _init: [wregfsr0]
+   649                           
+   650  01E  4A3  A32           	ljmp	_init
+   651                           
+   652                           	psect	text2
+   653  0C6                     __ptext2:	
+   654 ;; *************** function _ping *****************
+   655 ;; Defined at:
+   656 ;;		line 118 in file "../Main.c"
+   657 ;; Parameters:    Size  Location     Type
+   658 ;;		None
+   659 ;; Auto vars:     Size  Location     Type
+   660 ;;  a               2    3[BANK0 ] unsigned int 
+   661 ;; Return value:  Size  Location     Type
+   662 ;;		None               void
+   663 ;; Registers used:
+   664 ;;		wreg, fsr0l, fsr0h, status,2, btemp+0, btemp+1
+   665 ;; Tracked objects:
+   666 ;;		On entry : 0/0
+   667 ;;		On exit  : 0/0
+   668 ;;		Unchanged: 0/0
+   669 ;; Data sizes:      BANK0   BANK1   BANK3   BANK2  COMMON
+   670 ;;      Params:         0       0       0       0       0
+   671 ;;      Locals:         2       0       0       0       0
+   672 ;;      Temps:          3       0       0       0       0
+   673 ;;      Totals:         5       0       0       0       0
+   674 ;;Total ram usage:        5 bytes
+   675 ;; Hardware stack levels used:    1
+   676 ;; This function calls:
+   677 ;;		Nothing
+   678 ;; This function is called by:
+   679 ;;		_main
+   680 ;; This function uses a non-reentrant model
+   681 ;;
+   682                           
+   683                           
+   684                           ;psect for function _ping
+   685  0C6                     _ping:	
+   686                           
+   687                           ;Main.c: 120: unsigned int a = 0;
+   688  0C6  010                	movlb	0	; select bank0
+   689  0C7  07A                	clrf	ping@a
+   690  0C8  07B                	clrf	ping@a+1
+   691                           
+   692                           ;Main.c: 121: ANSELbits.ANS2 = 0;
+   693  0C9  011                	movlb	1	; select bank1
+   694  0CA  44A                	bcf	10,2	;volatile
+   695                           
+   696                           ;Main.c: 122: OPTION = 11000000;
+   697  0CB  CC0                	movlw	192
+   698  0CC  002                	option
+   699                           
+   700                           ;Main.c: 123: CM1CON0bits.nC1OUTEN = 1;
+   701  0CD  5C7                	bsf	7,6	;volatile
+   702                           
+   703                           ;Main.c: 124: CM1CON0bits.C1ON = 0;
+   704  0CE  467                	bcf	7,3	;volatile
+   705                           
+   706                           ;Main.c: 125: PORTAbits.RA2 = 1;
+   707  0CF  010                	movlb	0	; select bank0
+   708  0D0  546                	bsf	6,2	;volatile
+   709                           
+   710                           ;Main.c: 126: PORTCbits.RC1 = 1;
+   711  0D1  528                	bsf	8,1	;volatile
+   712                           
+   713                           ;Main.c: 127: sensor_config.Y = 0;
+   714  0D2  4D5                	bcf	_sensor_config,6
+   715                           
+   716                           ;Main.c: 128: count = 0;
+   717  0D3  070                	clrf	_count
+   718  0D4  071                	clrf	_count+1
+   719                           
+   720                           ;Main.c: 129: PORTCbits.RC5 = 0;
+   721  0D5  4A8                	bcf	8,5	;volatile
+   722                           
+   723                           ;Main.c: 130: TRISC = 0b10000110;
+   724  0D6  C86                	movlw	134
+   725  0D7  008                	tris	8
+   726  0D8                     l746:	
+   727                           ;Main.c: 131: while (sensor_config.Y == 0)
+   728                           
+   729  0D8  6D5                	btfsc	_sensor_config,6
+   730  0D9  AFC                	goto	l760
+   731                           
+   732                           ;Main.c: 132: {
+   733                           ;Main.c: 133: if (PORTCbits.RC1 == 0) {
+   734  0DA  628                	btfsc	8,1	;volatile
+   735  0DB  AD8                	goto	l746
+   736                           
+   737                           ;Main.c: 134: sensor_config.OR = 1;
+   738  0DC  535                	bsf	_sensor_config,1
+   739                           
+   740                           ;Main.c: 135: sensor_config.Y = 1;
+   741  0DD  5D5                	bsf	_sensor_config,6
+   742                           
+   743                           ;Main.c: 136: count = 1;
+   744  0DE  C01                	movlw	1
+   745  0DF  030                	movwf	_count
+   746  0E0  C00                	movlw	0
+   747  0E1  031                	movwf	_count+1
+   748  0E2                     l744:	
+   749                           ;Main.c: 137: while (PORTCbits.RC1 == 0);
+   750                           
+   751  0E2  628                	btfsc	8,1	;volatile
+   752  0E3  AD8                	goto	l746
+   753  0E4  AE2                	goto	l744
+   754  0E5                     l748:	
+   755                           ;Main.c: 138: }
+   756                           ;Main.c: 139: }
+   757                           ;Main.c: 140: while (a < 8000)
+   758                           
+   759                           
+   760                           ;Main.c: 141: {
+   761                           ;Main.c: 142: if (PORTCbits.RC1 == 0)
+   762  0E5  628                	btfsc	8,1	;volatile
+   763  0E6  AF3                	goto	l758
+   764                           
+   765                           ;Main.c: 143: {
+   766                           ;Main.c: 144: sensor_config.AND = 1;
+   767  0E7  515                	bsf	_sensor_config,0
+   768                           
+   769                           ;Main.c: 145: sensor_config.OR = 0;
+   770  0E8  435                	bcf	_sensor_config,1
+   771                           
+   772                           ;Main.c: 146: count = 2;
+   773  0E9  C02                	movlw	2
+   774  0EA  030                	movwf	_count
+   775  0EB  C00                	movlw	0
+   776  0EC  031                	movwf	_count+1
+   777                           
+   778                           ;Main.c: 147: a = (8000 + 1000);
+   779  0ED  C28                	movlw	40
+   780  0EE  03A                	movwf	ping@a
+   781  0EF  C23                	movlw	35
+   782  0F0  03B                	movwf	ping@a+1
+   783  0F1                     l756:	
+   784                           ;Main.c: 148: while (PORTCbits.RC1 == 0);
+   785                           
+   786  0F1  728                	btfss	8,1	;volatile
+   787  0F2  AF1                	goto	l756
+   788  0F3                     l758:	
+   789                           
+   790                           ;Main.c: 149: }
+   791                           ;Main.c: 150: a++;
+   792  0F3  C01                	movlw	1
+   793  0F4  02C                	movwf	12
+   794  0F5  06D                	clrf	13
+   795  0F6  20C                	movf	12,w
+   796  0F7  1FA                	addwf	ping@a,f
+   797  0F8  603                	skipnc
+   798  0F9  2BB                	incf	ping@a+1,f
+   799  0FA  20D                	movf	13,w
+   800  0FB  1FB                	addwf	ping@a+1,f
+   801  0FC                     l760:	
+   802  0FC  C1F                	movlw	31
+   803  0FD  09B                	subwf	ping@a+1,w
+   804  0FE  C40                	movlw	64
+   805  0FF  643                	skipnz
+   806  100  09A                	subwf	ping@a,w
+   807  101  703                	skipc
+   808  102  AE5                	goto	l748
+   809                           
+   810                           ;Main.c: 152: }
+   811                           ;Main.c: 182: if (count == 1)
+   812  103  C01                	movlw	1
+   813  104  190                	xorwf	_count,w
+   814  105  111                	iorwf	_count+1,w
+   815  106  743                	skipz
+   816  107  B27                	goto	l774
+   817                           
+   818                           ;Main.c: 183: {
+   819                           ;Main.c: 184: TRISA = 0b00100000;
+   820  108  C20                	movlw	32
+   821  109  006                	tris	6
+   822                           
+   823                           ;Main.c: 185: PORTAbits.RA2 = 0;
+   824  10A  446                	bcf	6,2	;volatile
+   825                           
+   826                           ;Main.c: 186: _delay((unsigned long)((21)*(8000000/4000.0)));
+   827  10B  C37                	movlw	55
+   828  10C  038                	movwf	??_ping+1
+   829  10D  C8A                	movlw	138
+   830  10E  037                	movwf	??_ping
+   831  10F                     u577:	
+   832  10F  2F7                	decfsz	??_ping,f
+   833  110  B0F                	goto	u577
+   834  111  2F8                	decfsz	??_ping+1,f
+   835  112  B0F                	goto	u577
+   836  113  000                	nop
+   837                           
+   838                           ;Main.c: 187: PORTAbits.RA2 = 1;
+   839  114  010                	movlb	0	; select bank0
+   840  115  546                	bsf	6,2	;volatile
+   841                           
+   842                           ;Main.c: 188: TRISA = 0b00101000;
+   843  116  C28                	movlw	40
+   844  117  006                	tris	6
+   845                           
+   846                           ;Main.c: 189: PORTCbits.RC5 = 1;
+   847  118  5A8                	bsf	8,5	;volatile
+   848                           
+   849                           ;Main.c: 190: _delay((unsigned long)((340)*(8000000/4000.0)));
+   850  119  C04                	movlw	4
+   851  11A  039                	movwf	??_ping+2
+   852  11B  C74                	movlw	116
+   853  11C  038                	movwf	??_ping+1
+   854  11D  C1B                	movlw	27
+   855  11E  037                	movwf	??_ping
+   856  11F                     u587:	
+   857  11F  2F7                	decfsz	??_ping,f
+   858  120  B1F                	goto	u587
+   859  121  2F8                	decfsz	??_ping+1,f
+   860  122  B1F                	goto	u587
+   861  123  2F9                	decfsz	??_ping+2,f
+   862  124  B1F                	goto	u587
+   863                           
+   864                           ;Main.c: 191: PORTCbits.RC5 = 0;
+   865  125  010                	movlb	0	; select bank0
+   866  126  4A8                	bcf	8,5	;volatile
+   867  127                     l774:	
+   868                           
+   869                           ;Main.c: 192: }
+   870                           ;Main.c: 193: if (count >= 2)
+   871  127  C00                	movlw	0
+   872  128  091                	subwf	_count+1,w
+   873  129  C02                	movlw	2
+   874  12A  643                	skipnz
+   875  12B  090                	subwf	_count,w
+   876  12C  703                	skipc
+   877  12D  BA3                	goto	l91
+   878                           
+   879                           ;Main.c: 194: {
+   880                           ;Main.c: 195: PORTAbits.RA2 = 0;
+   881  12E  446                	bcf	6,2	;volatile
+   882                           
+   883                           ;Main.c: 196: _delay((unsigned long)((21)*(8000000/4000.0)));
+   884  12F  C37                	movlw	55
+   885  130  038                	movwf	??_ping+1
+   886  131  C8A                	movlw	138
+   887  132  037                	movwf	??_ping
+   888  133                     u597:	
+   889  133  2F7                	decfsz	??_ping,f
+   890  134  B33                	goto	u597
+   891  135  2F8                	decfsz	??_ping+1,f
+   892  136  B33                	goto	u597
+   893  137  000                	nop
+   894                           
+   895                           ;Main.c: 197: PORTAbits.RA2 = 1;
+   896  138  010                	movlb	0	; select bank0
+   897  139  546                	bsf	6,2	;volatile
+   898                           
+   899                           ;Main.c: 198: _delay((unsigned long)((21)*(8000000/4000.0)));
+   900  13A  C37                	movlw	55
+   901  13B  038                	movwf	??_ping+1
+   902  13C  C8A                	movlw	138
+   903  13D  037                	movwf	??_ping
+   904  13E                     u607:	
+   905  13E  2F7                	decfsz	??_ping,f
+   906  13F  B3E                	goto	u607
+   907  140  2F8                	decfsz	??_ping+1,f
+   908  141  B3E                	goto	u607
+   909  142  000                	nop
+   910                           
+   911                           ;Main.c: 199: PORTAbits.RA2 = 0;
+   912  143  010                	movlb	0	; select bank0
+   913  144  446                	bcf	6,2	;volatile
+   914                           
+   915                           ;Main.c: 200: _delay((unsigned long)((21)*(8000000/4000.0)));
+   916  145  C37                	movlw	55
+   917  146  038                	movwf	??_ping+1
+   918  147  C8A                	movlw	138
+   919  148  037                	movwf	??_ping
+   920  149                     u617:	
+   921  149  2F7                	decfsz	??_ping,f
+   922  14A  B49                	goto	u617
+   923  14B  2F8                	decfsz	??_ping+1,f
+   924  14C  B49                	goto	u617
+   925  14D  000                	nop
+   926                           
+   927                           ;Main.c: 201: PORTAbits.RA2 = 1;
+   928  14E  010                	movlb	0	; select bank0
+   929  14F  546                	bsf	6,2	;volatile
+   930                           
+   931                           ;Main.c: 216: TRISA = 0b00101000;
+   932  150  C28                	movlw	40
+   933  151  006                	tris	6
+   934                           
+   935                           ;Main.c: 217: PORTCbits.RC5 = 1;
+   936  152  5A8                	bsf	8,5	;volatile
+   937                           
+   938                           ;Main.c: 218: _delay((unsigned long)((170)*(8000000/4000.0)));
+   939  153  C02                	movlw	2
+   940  154  039                	movwf	??_ping+2
+   941  155  CBA                	movlw	186
+   942  156  038                	movwf	??_ping+1
+   943  157  C8B                	movlw	139
+   944  158  037                	movwf	??_ping
+   945  159                     u627:	
+   946  159  2F7                	decfsz	??_ping,f
+   947  15A  B59                	goto	u627
+   948  15B  2F8                	decfsz	??_ping+1,f
+   949  15C  B59                	goto	u627
+   950  15D  2F9                	decfsz	??_ping+2,f
+   951  15E  B59                	goto	u627
+   952  15F  B60                	nop2
+   953                           
+   954                           ;Main.c: 219: PORTCbits.RC5 = 0;
+   955  160  010                	movlb	0	; select bank0
+   956  161  4A8                	bcf	8,5	;volatile
+   957                           
+   958                           ;Main.c: 220: if (count != 3)
+   959  162  C03                	movlw	3
+   960  163  190                	xorwf	_count,w
+   961  164  111                	iorwf	_count+1,w
+   962  165  643                	skipnz
+   963  166  BA3                	goto	l91
+   964                           
+   965                           ;Main.c: 221: {
+   966                           ;Main.c: 222: _delay((unsigned long)((170)*(8000000/4000.0)));
+   967  167  C02                	movlw	2
+   968  168  039                	movwf	??_ping+2
+   969  169  CBA                	movlw	186
+   970  16A  038                	movwf	??_ping+1
+   971  16B  C8B                	movlw	139
+   972  16C  037                	movwf	??_ping
+   973  16D                     u637:	
+   974  16D  2F7                	decfsz	??_ping,f
+   975  16E  B6D                	goto	u637
+   976  16F  2F8                	decfsz	??_ping+1,f
+   977  170  B6D                	goto	u637
+   978  171  2F9                	decfsz	??_ping+2,f
+   979  172  B6D                	goto	u637
+   980  173  B74                	nop2
+   981                           
+   982                           ;Main.c: 223: PORTCbits.RC5 = 1;
+   983  174  010                	movlb	0	; select bank0
+   984  175  5A8                	bsf	8,5	;volatile
+   985                           
+   986                           ;Main.c: 224: _delay((unsigned long)((170)*(8000000/4000.0)));
+   987  176  C02                	movlw	2
+   988  177  039                	movwf	??_ping+2
+   989  178  CBA                	movlw	186
+   990  179  038                	movwf	??_ping+1
+   991  17A  C8B                	movlw	139
+   992  17B  037                	movwf	??_ping
+   993  17C                     u647:	
+   994  17C  2F7                	decfsz	??_ping,f
+   995  17D  B7C                	goto	u647
+   996  17E  2F8                	decfsz	??_ping+1,f
+   997  17F  B7C                	goto	u647
+   998  180  2F9                	decfsz	??_ping+2,f
+   999  181  B7C                	goto	u647
+  1000  182  B83                	nop2
+  1001                           
+  1002                           ;Main.c: 225: PORTCbits.RC5 = 0;
+  1003  183  010                	movlb	0	; select bank0
+  1004  184  4A8                	bcf	8,5	;volatile
+  1005                           
+  1006                           ;Main.c: 226: _delay((unsigned long)((170)*(8000000/4000.0)));
+  1007  185  C02                	movlw	2
+  1008  186  039                	movwf	??_ping+2
+  1009  187  CBA                	movlw	186
+  1010  188  038                	movwf	??_ping+1
+  1011  189  C8B                	movlw	139
+  1012  18A  037                	movwf	??_ping
+  1013  18B                     u657:	
+  1014  18B  2F7                	decfsz	??_ping,f
+  1015  18C  B8B                	goto	u657
+  1016  18D  2F8                	decfsz	??_ping+1,f
+  1017  18E  B8B                	goto	u657
+  1018  18F  2F9                	decfsz	??_ping+2,f
+  1019  190  B8B                	goto	u657
+  1020  191  B92                	nop2
+  1021                           
+  1022                           ;Main.c: 227: PORTCbits.RC5 = 1;
+  1023  192  010                	movlb	0	; select bank0
+  1024  193  5A8                	bsf	8,5	;volatile
+  1025                           
+  1026                           ;Main.c: 228: _delay((unsigned long)((170)*(8000000/4000.0)));
+  1027  194  C02                	movlw	2
+  1028  195  039                	movwf	??_ping+2
+  1029  196  CBA                	movlw	186
+  1030  197  038                	movwf	??_ping+1
+  1031  198  C8B                	movlw	139
+  1032  199  037                	movwf	??_ping
+  1033  19A                     u667:	
+  1034  19A  2F7                	decfsz	??_ping,f
+  1035  19B  B9A                	goto	u667
+  1036  19C  2F8                	decfsz	??_ping+1,f
+  1037  19D  B9A                	goto	u667
+  1038  19E  2F9                	decfsz	??_ping+2,f
+  1039  19F  B9A                	goto	u667
+  1040  1A0  BA1                	nop2
+  1041                           
+  1042                           ;Main.c: 229: PORTCbits.RC5 = 0;
+  1043  1A1  010                	movlb	0	; select bank0
+  1044  1A2  4A8                	bcf	8,5	;volatile
+  1045  1A3                     l91:	
+  1046                           
+  1047                           ;Main.c: 230: }
+  1048                           ;Main.c: 231: }
+  1049                           ;Main.c: 233: TRISC = 0b10000100;
+  1050  1A3  C84                	movlw	132
+  1051  1A4  008                	tris	8
+  1052                           
+  1053                           ;Main.c: 234: PORTCbits.RC1 = 0;
+  1054  1A5  428                	bcf	8,1	;volatile
+  1055                           
+  1056                           ;Main.c: 235: a = 0;
+  1057  1A6  07A                	clrf	ping@a
+  1058  1A7  07B                	clrf	ping@a+1
+  1059                           
+  1060                           ;Main.c: 236: TRISA = 0b00101100;
+  1061  1A8  C2C                	movlw	44
+  1062  1A9  006                	tris	6
+  1063                           
+  1064                           ;Main.c: 237: ANSELbits.ANS2 = 0;
+  1065  1AA  011                	movlb	1	; select bank1
+  1066  1AB  44A                	bcf	10,2	;volatile
+  1067                           
+  1068                           ;Main.c: 238: OPTION = 11000000;
+  1069  1AC  CC0                	movlw	192
+  1070  1AD  002                	option
+  1071                           
+  1072                           ;Main.c: 239: CM1CON0bits.nC1OUTEN = 1;
+  1073  1AE  5C7                	bsf	7,6	;volatile
+  1074                           
+  1075                           ;Main.c: 240: CM1CON0bits.C1ON = 0;
+  1076  1AF  467                	bcf	7,3	;volatile
+  1077                           
+  1078                           ;Main.c: 241: sensor_config.END = 0;
+  1079  1B0  010                	movlb	0	; select bank0
+  1080  1B1  455                	bcf	_sensor_config,2
+  1081  1B2                     l828:	
+  1082                           ;Main.c: 242: while (a < 30000)
+  1083                           
+  1084  1B2  C75                	movlw	117
+  1085  1B3  09B                	subwf	ping@a+1,w
+  1086  1B4  C30                	movlw	48
+  1087  1B5  643                	skipnz
+  1088  1B6  09A                	subwf	ping@a,w
+  1089  1B7  603                	btfsc	3,0
+  1090  1B8  BC9                	goto	l830
+  1091                           
+  1092                           ;Main.c: 243: {
+  1093                           ;Main.c: 244: if (PORTAbits.RA2 == 0) {
+  1094  1B9  646                	btfsc	6,2	;volatile
+  1095  1BA  BBF                	goto	l826
+  1096                           
+  1097                           ;Main.c: 245: a = (30000 + 5000);
+  1098  1BB  CB8                	movlw	184
+  1099  1BC  03A                	movwf	ping@a
+  1100  1BD  C88                	movlw	136
+  1101  1BE  03B                	movwf	ping@a+1
+  1102  1BF                     l826:	
+  1103                           
+  1104                           ;Main.c: 246: }
+  1105                           ;Main.c: 247: a++;
+  1106  1BF  C01                	movlw	1
+  1107  1C0  02C                	movwf	12
+  1108  1C1  06D                	clrf	13
+  1109  1C2  20C                	movf	12,w
+  1110  1C3  1FA                	addwf	ping@a,f
+  1111  1C4  603                	skipnc
+  1112  1C5  2BB                	incf	ping@a+1,f
+  1113  1C6  20D                	movf	13,w
+  1114  1C7  1FB                	addwf	ping@a+1,f
+  1115  1C8  BB2                	goto	l828
+  1116  1C9                     l830:	
+  1117                           
+  1118                           ;Main.c: 248: }
+  1119                           ;Main.c: 249: if (a < (30000 + 1000))
+  1120  1C9  C79                	movlw	121
+  1121  1CA  09B                	subwf	ping@a+1,w
+  1122  1CB  C18                	movlw	24
+  1123  1CC  643                	skipnz
+  1124  1CD  09A                	subwf	ping@a,w
+  1125  1CE  603                	skipnc
+  1126  1CF  01E                	return
+  1127                           
+  1128                           ;Main.c: 250: {
+  1129                           ;Main.c: 251: PORTCbits.RC5 = 1;
+  1130  1D0  5A8                	bsf	8,5	;volatile
+  1131                           
+  1132                           ;Main.c: 252: _delay((unsigned long)((170)*(8000000/4000.0)));
+  1133  1D1  C02                	movlw	2
+  1134  1D2  039                	movwf	??_ping+2
+  1135  1D3  CBA                	movlw	186
+  1136  1D4  038                	movwf	??_ping+1
+  1137  1D5  C8B                	movlw	139
+  1138  1D6  037                	movwf	??_ping
+  1139  1D7                     u677:	
+  1140  1D7  2F7                	decfsz	??_ping,f
+  1141  1D8  BD7                	goto	u677
+  1142  1D9  2F8                	decfsz	??_ping+1,f
+  1143  1DA  BD7                	goto	u677
+  1144  1DB  2F9                	decfsz	??_ping+2,f
+  1145  1DC  BD7                	goto	u677
+  1146  1DD  BDE                	nop2
+  1147                           
+  1148                           ;Main.c: 253: PORTCbits.RC5 = 0;
+  1149  1DE  010                	movlb	0	; select bank0
+  1150  1DF  4A8                	bcf	8,5	;volatile
+  1151                           
+  1152                           ;Main.c: 254: _delay((unsigned long)((170)*(8000000/4000.0)));
+  1153  1E0  C02                	movlw	2
+  1154  1E1  039                	movwf	??_ping+2
+  1155  1E2  CBA                	movlw	186
+  1156  1E3  038                	movwf	??_ping+1
+  1157  1E4  C8B                	movlw	139
+  1158  1E5  037                	movwf	??_ping
+  1159  1E6                     u687:	
+  1160  1E6  2F7                	decfsz	??_ping,f
+  1161  1E7  BE6                	goto	u687
+  1162  1E8  2F8                	decfsz	??_ping+1,f
+  1163  1E9  BE6                	goto	u687
+  1164  1EA  2F9                	decfsz	??_ping+2,f
+  1165  1EB  BE6                	goto	u687
+  1166  1EC  BED                	nop2
+  1167                           
+  1168                           ;Main.c: 255: PORTCbits.RC5 = 1;
+  1169  1ED  010                	movlb	0	; select bank0
+  1170  1EE  5A8                	bsf	8,5	;volatile
+  1171                           
+  1172                           ;Main.c: 256: _delay((unsigned long)((170)*(8000000/4000.0)));
+  1173  1EF  C02                	movlw	2
+  1174  1F0  039                	movwf	??_ping+2
+  1175  1F1  CBA                	movlw	186
+  1176  1F2  038                	movwf	??_ping+1
+  1177  1F3  C8B                	movlw	139
+  1178  1F4  037                	movwf	??_ping
+  1179  1F5                     u697:	
+  1180  1F5  2F7                	decfsz	??_ping,f
+  1181  1F6  BF5                	goto	u697
+  1182  1F7  2F8                	decfsz	??_ping+1,f
+  1183  1F8  BF5                	goto	u697
+  1184  1F9  2F9                	decfsz	??_ping+2,f
+  1185  1FA  BF5                	goto	u697
+  1186  1FB  BFC                	nop2
+  1187                           
+  1188                           ;Main.c: 257: PORTCbits.RC5 = 0;
+  1189  1FC  010                	movlb	0	; select bank0
+  1190  1FD  4A8                	bcf	8,5	;volatile
+  1191                           
+  1192                           ;Main.c: 258: sensor_config.END = 1;
+  1193  1FE  555                	bsf	_sensor_config,2
+  1194  1FF  01E                	return
+  1195  200                     __end_of_ping:	
+  1196                           
+  1197                           	psect	text3
+  1198  2D1                     __ptext3:	
+  1199 ;; *************** function _option_select *****************
+  1200 ;; Defined at:
+  1201 ;;		line 89 in file "../Main.c"
+  1202 ;; Parameters:    Size  Location     Type
+  1203 ;;		None
+  1204 ;; Auto vars:     Size  Location     Type
+  1205 ;;		None
+  1206 ;; Return value:  Size  Location     Type
+  1207 ;;		None               void
+  1208 ;; Registers used:
+  1209 ;;		wreg, fsr0l, fsr0h, status,2, status,0
+  1210 ;; Tracked objects:
+  1211 ;;		On entry : 0/0
+  1212 ;;		On exit  : 0/0
+  1213 ;;		Unchanged: 0/0
+  1214 ;; Data sizes:      BANK0   BANK1   BANK3   BANK2  COMMON
+  1215 ;;      Params:         0       0       0       0       0
+  1216 ;;      Locals:         0       0       0       0       0
+  1217 ;;      Temps:          2       0       0       0       0
+  1218 ;;      Totals:         2       0       0       0       0
+  1219 ;;Total ram usage:        2 bytes
+  1220 ;; Hardware stack levels used:    1
+  1221 ;; This function calls:
+  1222 ;;		Nothing
+  1223 ;; This function is called by:
+  1224 ;;		_main
+  1225 ;; This function uses a non-reentrant model
+  1226 ;;
+  1227                           
+  1228                           
+  1229                           ;psect for function _option_select
+  1230  2D1                     _option_select:	
+  1231                           
+  1232                           ;Main.c: 91: _delay((unsigned long)((17)*(8000000/4000.0)));
+  1233  2D1  C2D                	movlw	45
+  1234  2D2  010                	movlb	0	; select bank0
+  1235  2D3  038                	movwf	??_option_select+1
+  1236  2D4  C26                	movlw	38
+  1237  2D5  037                	movwf	??_option_select
+  1238  2D6                     u707:	
+  1239  2D6  2F7                	decfsz	??_option_select,f
+  1240  2D7  AD6                	goto	u707
+  1241  2D8  2F8                	decfsz	??_option_select+1,f
+  1242  2D9  AD6                	goto	u707
+  1243  2DA  000                	nop
+  1244                           
+  1245                           ;Main.c: 92: if (RB6 == 0)
+  1246  2DB  010                	movlb	0	; select bank0
+  1247  2DC  6C7                	btfsc	7,6	;volatile
+  1248  2DD  AEA                	goto	l708
+  1249                           
+  1250                           ;Main.c: 93: {
+  1251                           ;Main.c: 94: if (RB5 == 0)
+  1252  2DE  6A7                	btfsc	7,5	;volatile
+  1253  2DF  AE5                	goto	l706
+  1254                           
+  1255                           ;Main.c: 95: {
+  1256                           ;Main.c: 96: sensor_info.sensor = 1;
+  1257  2E0  216                	movf	_sensor_info,w
+  1258  2E1  EF8                	andlw	-8
+  1259  2E2  D01                	iorlw	1
+  1260  2E3  036                	movwf	_sensor_info
+  1261                           
+  1262                           ;Main.c: 97: }
+  1263  2E4  01E                	return
+  1264  2E5                     l706:	
+  1265                           
+  1266                           ;Main.c: 98: else
+  1267                           ;Main.c: 99: {
+  1268                           ;Main.c: 100: sensor_info.sensor = 2;
+  1269  2E5  216                	movf	_sensor_info,w
+  1270  2E6  EF8                	andlw	-8
+  1271  2E7  D02                	iorlw	2
+  1272  2E8  036                	movwf	_sensor_info
+  1273                           
+  1274                           ;Main.c: 101: }
+  1275                           ;Main.c: 102: }
+  1276  2E9  01E                	return
+  1277  2EA                     l708:	
+  1278                           
+  1279                           ;Main.c: 103: else if (RB6 == 1)
+  1280  2EA  7C7                	btfss	7,6	;volatile
+  1281  2EB  01E                	return
+  1282                           
+  1283                           ;Main.c: 104: {
+  1284                           ;Main.c: 105: if (RB5 == 0)
+  1285  2EC  6A7                	btfsc	7,5	;volatile
+  1286  2ED  AF3                	goto	l714
+  1287                           
+  1288                           ;Main.c: 106: {
+  1289                           ;Main.c: 107: sensor_info.sensor = 3;
+  1290  2EE  216                	movf	_sensor_info,w
+  1291  2EF  EF8                	andlw	-8
+  1292  2F0  D03                	iorlw	3
+  1293  2F1  036                	movwf	_sensor_info
+  1294                           
+  1295                           ;Main.c: 108: }
+  1296  2F2  01E                	return
+  1297  2F3                     l714:	
+  1298                           
+  1299                           ;Main.c: 109: else
+  1300                           ;Main.c: 110: {
+  1301                           ;Main.c: 111: sensor_info.sensor = 4;
+  1302  2F3  216                	movf	_sensor_info,w
+  1303  2F4  EF8                	andlw	-8
+  1304  2F5  D04                	iorlw	4
+  1305  2F6  036                	movwf	_sensor_info
+  1306  2F7  01E                	return
+  1307  2F8                     __end_of_option_select:	
+  1308                           
+  1309                           	psect	text4
+  1310  333                     __ptext4:	
+  1311 ;; *************** function _light *****************
+  1312 ;; Defined at:
+  1313 ;;		line 5 in file "../light.c"
+  1314 ;; Parameters:    Size  Location     Type
+  1315 ;;		None
+  1316 ;; Auto vars:     Size  Location     Type
+  1317 ;;		None
+  1318 ;; Return value:  Size  Location     Type
+  1319 ;;		None               void
+  1320 ;; Registers used:
+  1321 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+0, btemp+1, pclath, cstack
+  1322 ;; Tracked objects:
+  1323 ;;		On entry : 0/0
+  1324 ;;		On exit  : 0/0
+  1325 ;;		Unchanged: 0/0
+  1326 ;; Data sizes:      BANK0   BANK1   BANK3   BANK2  COMMON
+  1327 ;;      Params:         0       0       0       0       0
+  1328 ;;      Locals:         0       0       0       0       0
+  1329 ;;      Temps:          0       0       0       0       0
+  1330 ;;      Totals:         0       0       0       0       0
+  1331 ;;Total ram usage:        0 bytes
+  1332 ;; Hardware stack levels used:    1
+  1333 ;; Hardware stack levels required when called:    1
+  1334 ;; This function calls:
+  1335 ;;		_adc_read
+  1336 ;;		_output
+  1337 ;;		_poll_stack
+  1338 ;; This function is called by:
+  1339 ;;		_main
+  1340 ;; This function uses a non-reentrant model
+  1341 ;;
+  1342                           
+  1343                           
+  1344                           ;psect for function _light
+  1345  333                     _light:	
+  1346  333                     l117:	
+  1347                           ;light.c: 7: while (1)
+  1348                           
+  1349                           
+  1350                           ;light.c: 8: {
+  1351                           ;light.c: 9: count++;
+  1352  333  C01                	movlw	1
+  1353  334  02C                	movwf	12
+  1354  335  06D                	clrf	13
+  1355  336  20C                	movf	12,w
+  1356  337  010                	movlb	0	; select bank0
+  1357  338  1F0                	addwf	_count,f
+  1358  339  603                	skipnc
+  1359  33A  2B1                	incf	_count+1,f
+  1360  33B  20D                	movf	13,w
+  1361  33C  1F1                	addwf	_count+1,f
+  1362                           
+  1363                           ;light.c: 10: count2++;
+  1364  33D  C01                	movlw	1
+  1365  33E  02C                	movwf	12
+  1366  33F  06D                	clrf	13
+  1367  340  20C                	movf	12,w
+  1368  341  1F2                	addwf	_count2,f
+  1369  342  603                	skipnc
+  1370  343  2B3                	incf	_count2+1,f
+  1371  344  20D                	movf	13,w
+  1372  345  1F3                	addwf	_count2+1,f
+  1373                           
+  1374                           ;light.c: 12: if (count >= 250)
+  1375  346  C00                	movlw	0
+  1376  347  091                	subwf	_count+1,w
+  1377  348  CFA                	movlw	250
+  1378  349  643                	skipnz
+  1379  34A  090                	subwf	_count,w
+  1380  34B  703                	skipc
+  1381  34C  B51                	goto	l878
+  1382                           
+  1383                           ;light.c: 13: {
+  1384                           ;light.c: 14: sensor_config.T = 0;
+  1385  34D  4B5                	bcf	_sensor_config,5
+  1386                           
+  1387                           ;light.c: 15: PORTCbits.RC1 = 1;
+  1388  34E  528                	bsf	8,1	;volatile
+  1389                           
+  1390                           ;light.c: 16: PORTCbits.RC5 = 0;
+  1391  34F  4A8                	bcf	8,5	;volatile
+  1392                           
+  1393                           ;light.c: 17: sensor_config.startup = 1;
+  1394  350  595                	bsf	_sensor_config,4
+  1395  351                     l878:	
+  1396                           
+  1397                           ;light.c: 18: }
+  1398                           ;light.c: 25: adc_read();
+  1399  351  4A3  91C  5A3      	fcall	entry__adc_read
+  1400                           
+  1401                           ;light.c: 27: if (PORTCbits.RC7 == 0)
+  1402  354  010                	movlb	0	; select bank0
+  1403  355  6E8                	btfsc	8,7	;volatile
+  1404  356  B61                	goto	l892
+  1405                           
+  1406                           ;light.c: 28: {
+  1407                           ;light.c: 29: if (adc < 5)
+  1408  357  C05                	movlw	5
+  1409  358  094                	subwf	_adc,w
+  1410  359  603                	skipnc
+  1411  35A  B6A                	goto	l902
+  1412                           
+  1413                           ;light.c: 30: {
+  1414                           ;light.c: 31: PORTCbits.RC5 = 1;
+  1415  35B  5A8                	bsf	8,5	;volatile
+  1416                           
+  1417                           ;light.c: 32: count = 0;
+  1418  35C  070                	clrf	_count
+  1419  35D  071                	clrf	_count+1
+  1420                           
+  1421                           ;light.c: 33: if (sensor_config.startup == 1)
+  1422  35E  795                	btfss	_sensor_config,4
+  1423  35F  B6A                	goto	l902
+  1424  360  B69                	goto	l900
+  1425  361                     l892:	
+  1426                           ;light.c: 36: }
+  1427                           ;light.c: 37: }
+  1428                           ;light.c: 38: }
+  1429                           
+  1430                           ;light.c: 34: {
+  1431                           ;light.c: 35: sensor_config.T = 1;
+  1432                           
+  1433                           
+  1434                           ;light.c: 39: else
+  1435                           ;light.c: 40: {
+  1436                           ;light.c: 41: if (adc > 120)
+  1437  361  C79                	movlw	121
+  1438  362  094                	subwf	_adc,w
+  1439  363  703                	skipc
+  1440  364  B6A                	goto	l902
+  1441                           
+  1442                           ;light.c: 42: {
+  1443                           ;light.c: 43: PORTCbits.RC5 = 1;
+  1444  365  5A8                	bsf	8,5	;volatile
+  1445                           
+  1446                           ;light.c: 44: count = 0;
+  1447  366  070                	clrf	_count
+  1448  367  071                	clrf	_count+1
+  1449                           
+  1450                           ;light.c: 45: if (sensor_config.startup == 1)
+  1451  368  695                	btfsc	_sensor_config,4
+  1452  369                     l900:	
+  1453                           
+  1454                           ;light.c: 46: {
+  1455                           ;light.c: 47: sensor_config.T = 1;
+  1456  369  5B5                	bsf	_sensor_config,5
+  1457  36A                     l902:	
+  1458                           
+  1459                           ;light.c: 48: }
+  1460                           ;light.c: 49: }
+  1461                           ;light.c: 50: }
+  1462                           ;light.c: 52: poll_stack ();
+  1463  36A  4A3  918  5A3      	fcall	entry__poll_stack
+  1464                           
+  1465                           ;light.c: 54: output ();
+  1466  36D  4A3  91A  5A3      	fcall	entry__output
+  1467  370  B33                	goto	l117
+  1468  371                     __end_of_light:	
+  1469                           
+  1470                           	psect	text5
+  1471  03F                     __ptext5:	
+  1472 ;; *************** function _laser *****************
+  1473 ;; Defined at:
+  1474 ;;		line 5 in file "../laser.c"
+  1475 ;; Parameters:    Size  Location     Type
+  1476 ;;		None
+  1477 ;; Auto vars:     Size  Location     Type
+  1478 ;;		None
+  1479 ;; Return value:  Size  Location     Type
+  1480 ;;		None               void
+  1481 ;; Registers used:
+  1482 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+0, btemp+1, pclath, cstack
+  1483 ;; Tracked objects:
+  1484 ;;		On entry : 0/0
+  1485 ;;		On exit  : 0/0
+  1486 ;;		Unchanged: 0/0
+  1487 ;; Data sizes:      BANK0   BANK1   BANK3   BANK2  COMMON
+  1488 ;;      Params:         0       0       0       0       0
+  1489 ;;      Locals:         0       0       0       0       0
+  1490 ;;      Temps:          0       0       0       0       0
+  1491 ;;      Totals:         0       0       0       0       0
+  1492 ;;Total ram usage:        0 bytes
+  1493 ;; Hardware stack levels used:    1
+  1494 ;; Hardware stack levels required when called:    1
+  1495 ;; This function calls:
+  1496 ;;		_adc_read
+  1497 ;;		_output
+  1498 ;;		_poll_stack
+  1499 ;; This function is called by:
+  1500 ;;		_main
+  1501 ;; This function uses a non-reentrant model
+  1502 ;;
+  1503                           
+  1504                           
+  1505                           ;psect for function _laser
+  1506  03F                     _laser:	
+  1507  03F                     l148:	
+  1508                           ;laser.c: 7: while (1)
+  1509                           
+  1510                           
+  1511                           ;laser.c: 8: {
+  1512                           ;laser.c: 9: sensor_config.laseroff = 0;
+  1513  03F  010                	movlb	0	; select bank0
+  1514  040  4F5                	bcf	_sensor_config,7
+  1515  041                     l940:	
+  1516                           ;laser.c: 12: while (PORTCbits.RC7 == 0)
+  1517                           
+  1518  041  010                	movlb	0	; select bank0
+  1519  042  6E8                	btfsc	8,7	;volatile
+  1520  043  A80                	goto	l942
+  1521                           
+  1522                           ;laser.c: 13: {
+  1523                           ;laser.c: 14: count++;
+  1524  044  C01                	movlw	1
+  1525  045  02C                	movwf	12
+  1526  046  06D                	clrf	13
+  1527  047  20C                	movf	12,w
+  1528  048  1F0                	addwf	_count,f
+  1529  049  603                	skipnc
+  1530  04A  2B1                	incf	_count+1,f
+  1531  04B  20D                	movf	13,w
+  1532  04C  1F1                	addwf	_count+1,f
+  1533                           
+  1534                           ;laser.c: 15: count2++;
+  1535  04D  C01                	movlw	1
+  1536  04E  02C                	movwf	12
+  1537  04F  06D                	clrf	13
+  1538  050  20C                	movf	12,w
+  1539  051  1F2                	addwf	_count2,f
+  1540  052  603                	skipnc
+  1541  053  2B3                	incf	_count2+1,f
+  1542  054  20D                	movf	13,w
+  1543  055  1F3                	addwf	_count2+1,f
+  1544                           
+  1545                           ;laser.c: 17: if (count >= 200)
+  1546  056  C00                	movlw	0
+  1547  057  091                	subwf	_count+1,w
+  1548  058  CC8                	movlw	200
+  1549  059  643                	skipnz
+  1550  05A  090                	subwf	_count,w
+  1551  05B  703                	skipc
+  1552  05C  A61                	goto	l151
+  1553                           
+  1554                           ;laser.c: 18: {
+  1555                           ;laser.c: 19: sensor_config.T = 0;
+  1556  05D  4B5                	bcf	_sensor_config,5
+  1557                           
+  1558                           ;laser.c: 20: PORTCbits.RC1 = 1;
+  1559  05E  528                	bsf	8,1	;volatile
+  1560                           
+  1561                           ;laser.c: 21: PORTCbits.RC5 = 0;
+  1562  05F  4A8                	bcf	8,5	;volatile
+  1563                           
+  1564                           ;laser.c: 22: sensor_config.startup = 1;
+  1565  060  595                	bsf	_sensor_config,4
+  1566  061                     l151:	
+  1567                           
+  1568                           ;laser.c: 23: }
+  1569                           ;laser.c: 29: PORTCbits.RC6 = 1;
+  1570  061  5C8                	bsf	8,6	;volatile
+  1571                           
+  1572                           ;laser.c: 31: adc_read();
+  1573  062  4A3  91C  4A3      	fcall	entry__adc_read
+  1574                           
+  1575                           ;laser.c: 33: if (sensor_info.low_power == 1)
+  1576  065  010                	movlb	0	; select bank0
+  1577  066  676                	btfsc	_sensor_info,3
+  1578                           
+  1579                           ;laser.c: 34: {
+  1580                           ;laser.c: 35: PORTCbits.RC6 = 0;
+  1581  067  4C8                	bcf	8,6	;volatile
+  1582                           
+  1583                           ;laser.c: 36: }
+  1584                           ;laser.c: 37: if (adc < 10)
+  1585  068  C0A                	movlw	10
+  1586  069  094                	subwf	_adc,w
+  1587  06A  603                	skipnc
+  1588  06B  A77                	goto	l934
+  1589                           
+  1590                           ;laser.c: 38: {
+  1591                           ;laser.c: 39: if (sensor_config.laseroff == 0)
+  1592  06C  6F5                	btfsc	_sensor_config,7
+  1593  06D  A74                	goto	l932
+  1594                           
+  1595                           ;laser.c: 40: {
+  1596                           ;laser.c: 41: PORTCbits.RC5 = 1;
+  1597  06E  5A8                	bsf	8,5	;volatile
+  1598                           
+  1599                           ;laser.c: 42: PORTCbits.RC6 = 0;
+  1600  06F  4C8                	bcf	8,6	;volatile
+  1601                           
+  1602                           ;laser.c: 43: count = 0;
+  1603  070  070                	clrf	_count
+  1604  071  071                	clrf	_count+1
+  1605                           
+  1606                           ;laser.c: 44: if (sensor_config.startup == 1)
+  1607  072  695                	btfsc	_sensor_config,4
+  1608                           
+  1609                           ;laser.c: 45: {
+  1610                           ;laser.c: 46: sensor_config.T = 1;
+  1611  073  5B5                	bsf	_sensor_config,5
+  1612  074                     l932:	
+  1613                           
+  1614                           ;laser.c: 47: }
+  1615                           ;laser.c: 48: }
+  1616                           ;laser.c: 49: count = 0;
+  1617  074  070                	clrf	_count
+  1618  075  071                	clrf	_count+1
+  1619                           
+  1620                           ;laser.c: 50: }
+  1621  076  A79                	goto	l936
+  1622  077                     l934:	
+  1623                           
+  1624                           ;laser.c: 51: else
+  1625                           ;laser.c: 52: {
+  1626                           ;laser.c: 53: sensor_config.laseroff = 0;
+  1627  077  4F5                	bcf	_sensor_config,7
+  1628                           
+  1629                           ;laser.c: 54: sensor_config.T = 0;
+  1630  078  4B5                	bcf	_sensor_config,5
+  1631  079                     l936:	
+  1632                           
+  1633                           ;laser.c: 55: }
+  1634                           ;laser.c: 57: poll_stack ();
+  1635  079  4A3  918  4A3      	fcall	entry__poll_stack
+  1636                           
+  1637                           ;laser.c: 59: output ();
+  1638  07C  4A3  91A  4A3      	fcall	entry__output
+  1639  07F  A41                	goto	l940
+  1640  080                     l942:	
+  1641                           
+  1642                           ;laser.c: 60: }
+  1643                           ;laser.c: 62: sensor_config.laseroff = 0;
+  1644  080  4F5                	bcf	_sensor_config,7
+  1645  081                     l976:	
+  1646                           ;laser.c: 65: while (PORTCbits.RC7 == 1)
+  1647                           
+  1648  081  010                	movlb	0	; select bank0
+  1649  082  7E8                	btfss	8,7	;volatile
+  1650  083  A3F                	goto	l148
+  1651                           
+  1652                           ;laser.c: 66: {
+  1653                           ;laser.c: 67: count++;
+  1654  084  C01                	movlw	1
+  1655  085  02C                	movwf	12
+  1656  086  06D                	clrf	13
+  1657  087  20C                	movf	12,w
+  1658  088  1F0                	addwf	_count,f
+  1659  089  603                	skipnc
+  1660  08A  2B1                	incf	_count+1,f
+  1661  08B  20D                	movf	13,w
+  1662  08C  1F1                	addwf	_count+1,f
+  1663                           
+  1664                           ;laser.c: 68: count2++;
+  1665  08D  C01                	movlw	1
+  1666  08E  02C                	movwf	12
+  1667  08F  06D                	clrf	13
+  1668  090  20C                	movf	12,w
+  1669  091  1F2                	addwf	_count2,f
+  1670  092  603                	skipnc
+  1671  093  2B3                	incf	_count2+1,f
+  1672  094  20D                	movf	13,w
+  1673  095  1F3                	addwf	_count2+1,f
+  1674                           
+  1675                           ;laser.c: 69: if (count >= 200)
+  1676  096  C00                	movlw	0
+  1677  097  091                	subwf	_count+1,w
+  1678  098  CC8                	movlw	200
+  1679  099  643                	skipnz
+  1680  09A  090                	subwf	_count,w
+  1681  09B  703                	skipc
+  1682  09C  AA1                	goto	l950
+  1683                           
+  1684                           ;laser.c: 70: {
+  1685                           ;laser.c: 71: sensor_config.T = 0;
+  1686  09D  4B5                	bcf	_sensor_config,5
+  1687                           
+  1688                           ;laser.c: 72: PORTCbits.RC1 = 1;
+  1689  09E  528                	bsf	8,1	;volatile
+  1690                           
+  1691                           ;laser.c: 73: PORTCbits.RC5 = 0;
+  1692  09F  4A8                	bcf	8,5	;volatile
+  1693                           
+  1694                           ;laser.c: 74: sensor_config.startup = 1;
+  1695  0A0  595                	bsf	_sensor_config,4
+  1696  0A1                     l950:	
+  1697                           
+  1698                           ;laser.c: 75: }
+  1699                           ;laser.c: 77: if (count2 >= 2000) {
+  1700  0A1  C07                	movlw	7
+  1701  0A2  093                	subwf	_count2+1,w
+  1702  0A3  CD0                	movlw	208
+  1703  0A4  643                	skipnz
+  1704  0A5  092                	subwf	_count2,w
+  1705  0A6  603                	btfsc	3,0
+  1706                           
+  1707                           ;laser.c: 78: sensor_config.IN = 0;
+  1708  0A7  475                	bcf	_sensor_config,3
+  1709                           
+  1710                           ;laser.c: 79: }
+  1711                           ;laser.c: 81: PORTCbits.RC6 = 1;
+  1712  0A8  5C8                	bsf	8,6	;volatile
+  1713                           
+  1714                           ;laser.c: 83: adc_read();
+  1715  0A9  4A3  91C  4A3      	fcall	entry__adc_read
+  1716                           
+  1717                           ;laser.c: 85: if (sensor_info.low_power == 1) {
+  1718  0AC  010                	movlb	0	; select bank0
+  1719  0AD  676                	btfsc	_sensor_info,3
+  1720                           
+  1721                           ;laser.c: 86: PORTCbits.RC6 = 0;
+  1722  0AE  4C8                	bcf	8,6	;volatile
+  1723                           
+  1724                           ;laser.c: 87: }
+  1725                           ;laser.c: 89: if (adc > 107)
+  1726  0AF  C6C                	movlw	108
+  1727  0B0  094                	subwf	_adc,w
+  1728  0B1  703                	skipc
+  1729  0B2  ABD                	goto	l970
+  1730                           
+  1731                           ;laser.c: 90: {
+  1732                           ;laser.c: 91: if (sensor_config.laseroff == 0)
+  1733  0B3  6F5                	btfsc	_sensor_config,7
+  1734  0B4  ABA                	goto	l968
+  1735                           
+  1736                           ;laser.c: 92: {
+  1737                           ;laser.c: 93: PORTCbits.RC5 = 1;
+  1738  0B5  5A8                	bsf	8,5	;volatile
+  1739                           
+  1740                           ;laser.c: 94: PORTCbits.RC6 = 0;
+  1741  0B6  4C8                	bcf	8,6	;volatile
+  1742                           
+  1743                           ;laser.c: 95: if (sensor_config.startup == 1)
+  1744  0B7  795                	btfss	_sensor_config,4
+  1745  0B8  ABA                	goto	l968
+  1746                           
+  1747                           ;laser.c: 96: {
+  1748                           ;laser.c: 97: sensor_config.T = 1;
+  1749  0B9  5B5                	bsf	_sensor_config,5
+  1750  0BA                     l968:	
+  1751                           
+  1752                           ;laser.c: 98: }
+  1753                           ;laser.c: 99: }
+  1754                           ;laser.c: 100: count = 0;
+  1755  0BA  070                	clrf	_count
+  1756  0BB  071                	clrf	_count+1
+  1757                           
+  1758                           ;laser.c: 101: }
+  1759  0BC  ABF                	goto	l972
+  1760  0BD                     l970:	
+  1761                           
+  1762                           ;laser.c: 102: else
+  1763                           ;laser.c: 103: {
+  1764                           ;laser.c: 104: sensor_config.laseroff = 0;
+  1765  0BD  4F5                	bcf	_sensor_config,7
+  1766                           
+  1767                           ;laser.c: 105: sensor_config.T = 0;
+  1768  0BE  4B5                	bcf	_sensor_config,5
+  1769  0BF                     l972:	
+  1770                           
+  1771                           ;laser.c: 106: }
+  1772                           ;laser.c: 108: poll_stack ();
+  1773  0BF  4A3  918  4A3      	fcall	entry__poll_stack
+  1774                           
+  1775                           ;laser.c: 110: output ();
+  1776  0C2  4A3  91A  4A3      	fcall	entry__output
+  1777  0C5  A81                	goto	l976
+  1778  0C6                     __end_of_laser:	
+  1779                           
+  1780                           	psect	text6
+  1781  027                     __ptext6:	
+  1782 ;; *************** function _poll_stack *****************
+  1783 ;; Defined at:
+  1784 ;;		line 18 in file "../utils.c"
+  1785 ;; Parameters:    Size  Location     Type
+  1786 ;;		None
+  1787 ;; Auto vars:     Size  Location     Type
+  1788 ;;		None
+  1789 ;; Return value:  Size  Location     Type
+  1790 ;;		None               void
+  1791 ;; Registers used:
+  1792 ;;		fsr0l, fsr0h
+  1793 ;; Tracked objects:
+  1794 ;;		On entry : 0/0
+  1795 ;;		On exit  : 0/0
+  1796 ;;		Unchanged: 0/0
+  1797 ;; Data sizes:      BANK0   BANK1   BANK3   BANK2  COMMON
+  1798 ;;      Params:         0       0       0       0       0
+  1799 ;;      Locals:         0       0       0       0       0
+  1800 ;;      Temps:          0       0       0       0       0
+  1801 ;;      Totals:         0       0       0       0       0
+  1802 ;;Total ram usage:        0 bytes
+  1803 ;; Hardware stack levels used:    1
+  1804 ;; This function calls:
+  1805 ;;		Nothing
+  1806 ;; This function is called by:
+  1807 ;;		_light
+  1808 ;;		_laser
+  1809 ;;		_pir_mic
+  1810 ;; This function uses a non-reentrant model
+  1811 ;;
+  1812                           
+  1813                           
+  1814                           ;psect for function _poll_stack
+  1815  027                     _poll_stack:	
+  1816                           
+  1817                           ;utils.c: 20: if (sensor_config.startup == 1)
+  1818  027  010                	movlb	0	; select bank0
+  1819  028  795                	btfss	_sensor_config,4
+  1820  029  01E                	return
+  1821                           
+  1822                           ;utils.c: 21: {
+  1823                           ;utils.c: 22: if (sensor_config.END == 0)
+  1824  02A  655                	btfsc	_sensor_config,2
+  1825  02B  01E                	return
+  1826                           
+  1827                           ;utils.c: 23: {
+  1828                           ;utils.c: 24: if (PORTAbits.RA2 == 0)
+  1829  02C  646                	btfsc	6,2	;volatile
+  1830  02D  A30                	goto	l642
+  1831                           
+  1832                           ;utils.c: 25: {
+  1833                           ;utils.c: 38: sensor_config.IN = 1;
+  1834  02E  575                	bsf	_sensor_config,3
+  1835                           
+  1836                           ;utils.c: 39: }
+  1837  02F  01E                	return
+  1838  030                     l642:	
+  1839                           
+  1840                           ;utils.c: 40: else
+  1841                           ;utils.c: 41: {
+  1842                           ;utils.c: 42: sensor_config.IN = 0;
+  1843  030  475                	bcf	_sensor_config,3
+  1844  031  01E                	return
+  1845  032                     __end_of_poll_stack:	
+  1846                           
+  1847                           	psect	text7
+  1848  3B4                     __ptext7:	
+  1849 ;; *************** function _output *****************
+  1850 ;; Defined at:
+  1851 ;;		line 50 in file "../utils.c"
+  1852 ;; Parameters:    Size  Location     Type
+  1853 ;;		None
+  1854 ;; Auto vars:     Size  Location     Type
+  1855 ;;		None
+  1856 ;; Return value:  Size  Location     Type
+  1857 ;;		None               void
+  1858 ;; Registers used:
+  1859 ;;		wreg, fsr0l, fsr0h, status,2, status,0
+  1860 ;; Tracked objects:
+  1861 ;;		On entry : 0/0
+  1862 ;;		On exit  : 0/0
+  1863 ;;		Unchanged: 0/0
+  1864 ;; Data sizes:      BANK0   BANK1   BANK3   BANK2  COMMON
+  1865 ;;      Params:         0       0       0       0       0
+  1866 ;;      Locals:         0       0       0       0       0
+  1867 ;;      Temps:          2       0       0       0       0
+  1868 ;;      Totals:         2       0       0       0       0
+  1869 ;;Total ram usage:        2 bytes
+  1870 ;; Hardware stack levels used:    1
+  1871 ;; This function calls:
+  1872 ;;		Nothing
+  1873 ;; This function is called by:
+  1874 ;;		_light
+  1875 ;;		_laser
+  1876 ;;		_pir_mic
+  1877 ;; This function uses a non-reentrant model
+  1878 ;;
+  1879                           
+  1880                           
+  1881                           ;psect for function _output
+  1882  3B4                     _output:	
+  1883                           
+  1884                           ;utils.c: 52: if (sensor_config.OR == 1)
+  1885  3B4  010                	movlb	0	; select bank0
+  1886  3B5  735                	btfss	_sensor_config,1
+  1887  3B6  BBC                	goto	l654
+  1888                           
+  1889                           ;utils.c: 53: {
+  1890                           ;utils.c: 54: if (sensor_config.T == 1)
+  1891  3B7  6B5                	btfsc	_sensor_config,5
+  1892  3B8  BC6                	goto	l666
+  1893                           
+  1894                           ;utils.c: 59: else if (sensor_config.IN == 1)
+  1895                           
+  1896                           ;utils.c: 58: }
+  1897                           
+  1898                           ;utils.c: 55: {
+  1899                           ;utils.c: 56: PORTCbits.RC1 = 0;
+  1900  3B9  775                	btfss	_sensor_config,3
+  1901  3BA  BC9                	goto	l670
+  1902  3BB  BC6                	goto	l666
+  1903  3BC                     l654:	
+  1904                           ;utils.c: 62: }
+  1905                           ;utils.c: 63: }
+  1906                           
+  1907                           ;utils.c: 60: {
+  1908                           ;utils.c: 61: PORTCbits.RC1 = 0;
+  1909                           
+  1910                           
+  1911                           ;utils.c: 64: else if (sensor_config.AND == 1)
+  1912  3BC  715                	btfss	_sensor_config,0
+  1913  3BD  BC9                	goto	l670
+  1914                           
+  1915                           ;utils.c: 65: {
+  1916                           ;utils.c: 66: if ((sensor_config.END == 1) && (sensor_config.T == 1))
+  1917  3BE  655                	btfsc	_sensor_config,2
+  1918  3BF  7B5                	btfss	_sensor_config,5
+  1919  3C0  BC2                	goto	l662
+  1920  3C1  BC6                	goto	l666
+  1921  3C2                     l662:	
+  1922                           ;utils.c: 71: }
+  1923                           
+  1924                           ;utils.c: 67: {
+  1925                           ;utils.c: 69: PORTCbits.RC1 = 0;
+  1926                           
+  1927                           
+  1928                           ;utils.c: 72: else if (sensor_config.T == 1)
+  1929  3C2  7B5                	btfss	_sensor_config,5
+  1930  3C3  BC9                	goto	l670
+  1931                           
+  1932                           ;utils.c: 73: {
+  1933                           ;utils.c: 74: if (sensor_config.IN == 1)
+  1934  3C4  775                	btfss	_sensor_config,3
+  1935  3C5  BC8                	goto	l668
+  1936  3C6                     l666:	
+  1937                           
+  1938                           ;utils.c: 75: {
+  1939                           ;utils.c: 77: PORTCbits.RC1 = 0;
+  1940  3C6  428                	bcf	8,1	;volatile
+  1941                           
+  1942                           ;utils.c: 79: }
+  1943  3C7  BC9                	goto	l670
+  1944  3C8                     l668:	
+  1945                           
+  1946                           ;utils.c: 80: else
+  1947                           ;utils.c: 81: {
+  1948                           ;utils.c: 82: PORTCbits.RC1 = 1;
+  1949  3C8  528                	bsf	8,1	;volatile
+  1950  3C9                     l670:	
+  1951                           
+  1952                           ;utils.c: 84: }
+  1953                           ;utils.c: 85: }
+  1954                           ;utils.c: 86: }
+  1955                           ;utils.c: 88: if (sensor_info.sensor == 4)
+  1956  3C9  216                	movf	_sensor_info,w
+  1957  3CA  E07                	andlw	7
+  1958  3CB  F04                	xorlw	4
+  1959  3CC  743                	skipz
+  1960  3CD  01E                	return
+  1961                           
+  1962                           ;utils.c: 89: {
+  1963                           ;utils.c: 90: if (sensor_config.T == 1)
+  1964  3CE  7B5                	btfss	_sensor_config,5
+  1965  3CF  01E                	return
+  1966                           
+  1967                           ;utils.c: 91: {
+  1968                           ;utils.c: 92: if (sensor_config.laseroff == 0)
+  1969  3D0  6F5                	btfsc	_sensor_config,7
+  1970  3D1  01E                	return
+  1971                           
+  1972                           ;utils.c: 93: {
+  1973                           ;utils.c: 94: if (PORTCbits.RC6 == 0)
+  1974  3D2  6C8                	btfsc	8,6	;volatile
+  1975  3D3  01E                	return
+  1976                           
+  1977                           ;utils.c: 95: {
+  1978                           ;utils.c: 96: _delay((unsigned long)((17)*(8000000/4000.0)));
+  1979  3D4  C2D                	movlw	45
+  1980  3D5  038                	movwf	??_output+1
+  1981  3D6  C26                	movlw	38
+  1982  3D7  037                	movwf	??_output
+  1983  3D8                     u717:	
+  1984  3D8  2F7                	decfsz	??_output,f
+  1985  3D9  BD8                	goto	u717
+  1986  3DA  2F8                	decfsz	??_output+1,f
+  1987  3DB  BD8                	goto	u717
+  1988  3DC  000                	nop
+  1989                           
+  1990                           ;utils.c: 97: _delay((unsigned long)((17)*(8000000/4000.0)));
+  1991  3DD  C2D                	movlw	45
+  1992  3DE  010                	movlb	0	; select bank0
+  1993  3DF  038                	movwf	??_output+1
+  1994  3E0  C26                	movlw	38
+  1995  3E1  037                	movwf	??_output
+  1996  3E2                     u727:	
+  1997  3E2  2F7                	decfsz	??_output,f
+  1998  3E3  BE2                	goto	u727
+  1999  3E4  2F8                	decfsz	??_output+1,f
+  2000  3E5  BE2                	goto	u727
+  2001  3E6  000                	nop
+  2002                           
+  2003                           ;utils.c: 98: _delay((unsigned long)((17)*(8000000/4000.0)));;
+  2004  3E7  C2D                	movlw	45
+  2005  3E8  010                	movlb	0	; select bank0
+  2006  3E9  038                	movwf	??_output+1
+  2007  3EA  C26                	movlw	38
+  2008  3EB  037                	movwf	??_output
+  2009  3EC                     u737:	
+  2010  3EC  2F7                	decfsz	??_output,f
+  2011  3ED  BEC                	goto	u737
+  2012  3EE  2F8                	decfsz	??_output+1,f
+  2013  3EF  BEC                	goto	u737
+  2014  3F0  000                	nop
+  2015                           
+  2016                           ;utils.c: 99: _delay((unsigned long)((17)*(8000000/4000.0)));
+  2017  3F1  C2D                	movlw	45
+  2018  3F2  010                	movlb	0	; select bank0
+  2019  3F3  038                	movwf	??_output+1
+  2020  3F4  C26                	movlw	38
+  2021  3F5  037                	movwf	??_output
+  2022  3F6                     u747:	
+  2023  3F6  2F7                	decfsz	??_output,f
+  2024  3F7  BF6                	goto	u747
+  2025  3F8  2F8                	decfsz	??_output+1,f
+  2026  3F9  BF6                	goto	u747
+  2027  3FA  000                	nop
+  2028                           
+  2029                           ;utils.c: 100: PORTCbits.RC6 = 1;
+  2030  3FB  010                	movlb	0	; select bank0
+  2031  3FC  5C8                	bsf	8,6	;volatile
+  2032                           
+  2033                           ;utils.c: 101: sensor_config.laseroff = 1;
+  2034  3FD  5F5                	bsf	_sensor_config,7
+  2035  3FE  01E                	return
+  2036  3FF                     __end_of_output:	
+  2037                           
+  2038                           	psect	text8
+  2039  2C6                     __ptext8:	
+  2040 ;; *************** function _adc_read *****************
+  2041 ;; Defined at:
+  2042 ;;		line 7 in file "../utils.c"
+  2043 ;; Parameters:    Size  Location     Type
+  2044 ;;		None
+  2045 ;; Auto vars:     Size  Location     Type
+  2046 ;;		None
+  2047 ;; Return value:  Size  Location     Type
+  2048 ;;		None               void
+  2049 ;; Registers used:
+  2050 ;;		wreg, fsr0l, fsr0h
+  2051 ;; Tracked objects:
+  2052 ;;		On entry : 0/0
+  2053 ;;		On exit  : 0/0
+  2054 ;;		Unchanged: 0/0
+  2055 ;; Data sizes:      BANK0   BANK1   BANK3   BANK2  COMMON
+  2056 ;;      Params:         0       0       0       0       0
+  2057 ;;      Locals:         0       0       0       0       0
+  2058 ;;      Temps:          0       0       0       0       0
+  2059 ;;      Totals:         0       0       0       0       0
+  2060 ;;Total ram usage:        0 bytes
+  2061 ;; Hardware stack levels used:    1
+  2062 ;; This function calls:
+  2063 ;;		Nothing
+  2064 ;; This function is called by:
+  2065 ;;		_light
+  2066 ;;		_laser
+  2067 ;;		_pir_mic
+  2068 ;; This function uses a non-reentrant model
+  2069 ;;
+  2070                           
+  2071                           
+  2072                           ;psect for function _adc_read
+  2073  2C6                     _adc_read:	
+  2074                           
+  2075                           ;utils.c: 9: ADCON0 = 0b10011000;
+  2076  2C6  C98                	movlw	152
+  2077  2C7  010                	movlb	0	; select bank0
+  2078  2C8  029                	movwf	9	;volatile
+  2079                           
+  2080                           ;utils.c: 10: ADCON0bits.ADON = 1;
+  2081  2C9  509                	bsf	9,0	;volatile
+  2082                           
+  2083                           ;utils.c: 11: ADCON0bits.GO_nDONE = 1;
+  2084  2CA  529                	bsf	9,1	;volatile
+  2085  2CB                     l628:	
+  2086                           ;utils.c: 12: while (GO_nDONE);
+  2087                           
+  2088  2CB  629                	btfsc	9,1	;volatile
+  2089  2CC  ACB                	goto	l628
+  2090                           
+  2091                           ;utils.c: 13: ADCON0bits.ADON = 0;
+  2092  2CD  409                	bcf	9,0	;volatile
+  2093                           
+  2094                           ;utils.c: 14: adc = ADRES;
+  2095  2CE  20A                	movf	10,w	;volatile
+  2096  2CF  034                	movwf	_adc
+  2097  2D0  01E                	return
+  2098  2D1                     __end_of_adc_read:	
+  2099                           
+  2100                           	psect	text9
+  2101  032                     __ptext9:	
+  2102 ;; *************** function _init *****************
+  2103 ;; Defined at:
+  2104 ;;		line 72 in file "../Main.c"
+  2105 ;; Parameters:    Size  Location     Type
+  2106 ;;		None
+  2107 ;; Auto vars:     Size  Location     Type
+  2108 ;;		None
+  2109 ;; Return value:  Size  Location     Type
+  2110 ;;		None               void
+  2111 ;; Registers used:
+  2112 ;;		wreg, fsr0l, fsr0h
+  2113 ;; Tracked objects:
+  2114 ;;		On entry : 0/0
+  2115 ;;		On exit  : 0/0
+  2116 ;;		Unchanged: 0/0
+  2117 ;; Data sizes:      BANK0   BANK1   BANK3   BANK2  COMMON
+  2118 ;;      Params:         0       0       0       0       0
+  2119 ;;      Locals:         0       0       0       0       0
+  2120 ;;      Temps:          0       0       0       0       0
+  2121 ;;      Totals:         0       0       0       0       0
+  2122 ;;Total ram usage:        0 bytes
+  2123 ;; Hardware stack levels used:    1
+  2124 ;; This function calls:
+  2125 ;;		Nothing
+  2126 ;; This function is called by:
+  2127 ;;		_main
+  2128 ;; This function uses a non-reentrant model
+  2129 ;;
+  2130                           
+  2131                           
+  2132                           ;psect for function _init
+  2133  032                     _init:	
+  2134                           
+  2135                           ;Main.c: 74: PORTAbits.RA1 = 1;
+  2136  032  010                	movlb	0	; select bank0
+  2137  033  526                	bsf	6,1	;volatile
+  2138                           
+  2139                           ;Main.c: 76: TRISA = 0x28;
+  2140  034  C28                	movlw	40
+  2141  035  006                	tris	6
+  2142                           
+  2143                           ;Main.c: 78: TRISC = 0x84;
+  2144  036  C84                	movlw	132
+  2145  037  008                	tris	8
+  2146                           
+  2147                           ;Main.c: 80: TRISB = 0b11100000;
+  2148  038  CE0                	movlw	224
+  2149  039  007                	tris	7
+  2150                           
+  2151                           ;Main.c: 82: CM2CON0bits.C2PREF2 = 1;
+  2152  03A  011                	movlb	1	; select bank1
+  2153  03B  588                	bsf	8,4	;volatile
+  2154                           
+  2155                           ;Main.c: 83: CM2CON0bits.C2ON = 0;
+  2156  03C  468                	bcf	8,3	;volatile
+  2157                           
+  2158                           ;Main.c: 84: ANSELbits.ANS5 = 0;
+  2159  03D  4AA                	bcf	10,5	;volatile
+  2160  03E  01E                	return
+  2161  03F                     __end_of_init:	
+  2162  000C                     btemp	set	12	;btemp
+  2163  000C                     wtemp	set	12
+  2164  000C                     wtemp0	set	12
+  2165  000E                     wtemp1	set	14
+  2166  0010                     wtemp2	set	16
+  2167  0012                     wtemp3	set	18
+  2168  0014                     wtemp4	set	20
+  2169  0016                     wtemp5	set	22
+  2170  000D                     wtemp6	set	13
+  2171  000C                     ttemp	set	12
+  2172  000C                     ttemp0	set	12
+  2173  000F                     ttemp1	set	15
+  2174  0012                     ttemp2	set	18
+  2175  0015                     ttemp3	set	21
+  2176  000D                     ttemp4	set	13
+  2177  000C                     ltemp	set	12
+  2178  000C                     ltemp0	set	12
+  2179  0010                     ltemp1	set	16
+  2180  0014                     ltemp2	set	20
+  2181  000E                     ltemp3	set	14
+
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        0
+    BSS         7
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    BANK0            16      6      13
+    BANK1            16      0       0
+    BANK3            16      0       0
+    BANK2            16      0       0
+    COMMON            0      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in BANK0
+
+    _main->_pir_mic
+    _pir_mic->_output
+    _light->_output
+    _laser->_output
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _main in COMMON
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 0     0      0     294
+                               _init
+                              _laser
+                              _light
+                      _option_select
+                               _ping
+                            _pir_mic
+ ---------------------------------------------------------------------------------
+ (1) _pir_mic                                              4     0      4     249
+                                              2 BANK0      4     0      4
+                           _adc_read
+                             _output
+                         _poll_stack
+ ---------------------------------------------------------------------------------
+ (1) _ping                                                 5     5      0      45
+                                              0 BANK0      5     5      0
+ ---------------------------------------------------------------------------------
+ (1) _option_select                                        2     2      0       0
+                                              0 BANK0      2     2      0
+ ---------------------------------------------------------------------------------
+ (1) _light                                                0     0      0       0
+                           _adc_read
+                             _output
+                         _poll_stack
+ ---------------------------------------------------------------------------------
+ (1) _laser                                                0     0      0       0
+                           _adc_read
+                             _output
+                         _poll_stack
+ ---------------------------------------------------------------------------------
+ (2) _poll_stack                                           0     0      0       0
+ ---------------------------------------------------------------------------------
+ (2) _output                                               2     2      0       0
+                                              0 BANK0      2     2      0
+ ---------------------------------------------------------------------------------
+ (2) _adc_read                                             0     0      0       0
+ ---------------------------------------------------------------------------------
+ (1) _init                                                 0     0      0       0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 2
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _init
+   _laser
+     _adc_read
+     _output
+     _poll_stack
+   _light
+     _adc_read
+     _output
+     _poll_stack
+   _option_select
+   _ping
+   _pir_mic
+     _adc_read
+     _output
+     _poll_stack
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+STACK                0      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+BITSFR0              0      0       0       1        0.0%
+SFR0                 0      0       0       1        0.0%
+ABS                  0      0       D       1        0.0%
+BITBANK0            10      0       0       2        0.0%
+BITSFR1              0      0       0       2        0.0%
+SFR1                 0      0       0       2        0.0%
+BANK0               10      6       D       3       81.3%
+BITBANK1            10      0       0       4        0.0%
+BITSFR3              0      0       0       4        0.0%
+SFR3                 0      0       0       4        0.0%
+BANK1               10      0       0       5        0.0%
+BITSFR2              0      0       0       5        0.0%
+SFR2                 0      0       0       5        0.0%
+DATA                 0      0       D       6        0.0%
+BITBANK3            10      0       0       7        0.0%
+BANK3               10      0       0       8        0.0%
+BITBANK2            10      0       0       9        0.0%
+BANK2               10      0       0      10        0.0%
+BITCOMMON            0      0       0      11        0.0%
+COMMON               0      0       0      12        0.0%
+
+
+Microchip Technology PIC Macro Assembler V1.32 build 58300 
+Symbol Table                                                                                   Wed Oct 22 14:18:45 2014
+
+         ?_option_select 0017              __CFG_CP$OFF 0000                       l57 03B3  
+                     l58 03B3                       l91 01A3                      l117 0333  
+                    l151 0061                      l240 02F8                      l148 003F  
+                    l642 0030                      l714 02F3                      l706 02E5  
+                    l628 02CB                      l900 0369                      l708 02EA  
+                    l662 03C2                      l670 03C9                      l654 03BC  
+                    l902 036A                      l830 01C9                      l760 00FC  
+                    l744 00E2                      l666 03C6                      l826 01BF  
+                    l746 00D8                      l668 03C8                      l932 0074  
+                    l940 0041                      l828 01B2                      l756 00F1  
+                    l748 00E5                      l950 00A1                      l942 0080  
+                    l934 0077                      l774 0127                      l758 00F3  
+                    l846 031B                      l936 0079                      l970 00BD  
+                    l972 00BF                      l892 0361                      l868 032C  
+                    l878 0351                      l968 00BA                      l976 0081  
+                    l992 0382                      l994 038E                      l996 039B  
+                    l998 039F                      _RB5 003D                      _RB6 003E  
+                    _RC5 0045                      u335 0315                      u607 013E  
+                    u617 0149                      u707 02D6                      u627 0159  
+                    u717 03D8                      u637 016D                      u727 03E2  
+                    u647 017C                      u737 03EC                      u657 018B  
+                    u577 010F                      u747 03F6                      u667 019A  
+                    u587 011F                      u677 01D7                      u597 0133  
+                    u687 01E6                      u697 01F5                      _adc 0014  
+       pir_mic@low_thold 001B                     l1002 03A3                     _main 0371  
+                   _init 0032                     _ping 00C6                     btemp 000C  
+                   ltemp 000C                     start 0002                     ttemp 000C  
+                   wtemp 000C            __CFG_CPSW$OFF 0000                    ?_main 0017  
+                  ?_init 0017                    _ADRES 000A                    ?_ping 0017  
+          __CFG_WDTE$OFF 0000                    _TRISA 0006                    _TRISB 0007  
+                  _TRISC 0008      entry__option_select 0012                    _count 0010  
+                  _laser 003F                    _light 0333          __end_of_pir_mic 0333  
+         __CFG_BOREN$OFF 0000                    ping@a 001A                    ltemp0 000C  
+                  ltemp1 0010                    ltemp2 0014                    ltemp3 000E  
+                  ttemp0 000C                    ttemp1 000F                    ttemp2 0012  
+                  ttemp3 0015                    ttemp4 000D                    wtemp0 000C  
+                  wtemp1 000E                    wtemp2 0010                    wtemp3 0012  
+                  wtemp4 0014                    wtemp5 0016                    wtemp6 000D  
+         __CFG_DRTEN$OFF 0000           __CFG_MCLRE$OFF 0000          ??_option_select 0017  
+        __initialization 0004             __end_of_main 03B4             __end_of_init 003F  
+           __end_of_ping 0200       pir_mic@reset_count 0019                   ??_main 001D  
+                 ??_init 0017                   ??_ping 0017                   _ADCON0 0009  
+                 ?_laser 0017                   ?_light 0017         __end_of_adc_read 02D1  
+                 _OPTION 0000              entry__laser 0016              entry__light 0014  
+                 _count2 0012                   _output 03B4                ??_pir_mic 001D  
+__end_of__initialization 000B            __end_of_laser 00C6            __end_of_light 0371  
+                ??_laser 0019                  ??_light 0019               __pbssBANK0 0010  
+             __pmaintext 0371                ?_adc_read 0017                  ?_output 0017  
+              _ANSELbits 002A               ??_adc_read 0017                  __ptext0 0000  
+                __ptext1 02F8                  __ptext2 00C6                  __ptext3 02D1  
+                __ptext4 0333                  __ptext5 003F                  __ptext6 0027  
+                __ptext7 03B4                  __ptext8 02C6                  __ptext9 0032  
+        __size_of_output 004B             entry__output 001A                  _pir_mic 02F8  
+   end_of_initialization 000B    __end_of_option_select 02F8               _poll_stack 0027  
+              _PORTAbits 0006                _PORTCbits 0008              _CM1CON0bits 0027  
+            _CM2CON0bits 0028           __end_of_output 03FF      start_initialization 0004  
+       __CFG_IOSCFS$8MHz 0000               entry__init 001E               entry__ping 0010  
+            ?_poll_stack 0017                 ??_output 0017        __size_of_adc_read 000B  
+              ___latbits 0001            __pcstackBANK0 0017           entry__adc_read 001C  
+              __pjmp_tab 000E                 ?_pir_mic 0019           __size_of_laser 0087  
+         __size_of_light 003E      __size_of_poll_stack 000B                 _GO_nDONE 0049  
+       entry__poll_stack 0018               _ADCON0bits 0009                 _adc_read 02C6  
+          _sensor_config 0015         __size_of_pir_mic 003B            entry__pir_mic 000E  
+ __size_of_option_select 0027            __size_of_main 0043            __size_of_init 000D  
+          __size_of_ping 013A             ??_poll_stack 0017       __end_of_poll_stack 0032  
+          _option_select 02D1              _sensor_info 0016        pir_mic@high_thold 001C  
+     __CFG_FOSC$INTRC_IO 0000  
