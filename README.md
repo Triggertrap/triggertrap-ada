@@ -868,7 +868,7 @@ EEPROM_NONE
 define INCLUDE_NEWMODE 
 
 * This could either be defined in a file such as MenuDefines.h or it could be added as a symbol in the project properties. This will allow an example mode to appear on the device. This can be modified at will for experimentation. 
-* 
+
 * Further information on how to make your own mode can be found in the comments of NewMode.cpp
 
 ##10. Notes on building firmware
