@@ -4,15 +4,15 @@ Ada source code
 
 ##Contents
 
-1.About Ada
-2.Licence Information
-3.About this document
-4.Adafruit files
-5.Atmel Libraries
-6.Arduino Libraries
-7.Ada project files
-8.EEPROM addresses
-9.Creating a new mode
+1. About Ada
+2. Licence Information
+3. About this document
+4. Adafruit files
+5. Atmel Libraries
+6. Arduino Libraries
+7. Ada project files
+8. EEPROM addresses
+9. Creating a new mode
 
 
 ##1. About Triggertrap Ada
