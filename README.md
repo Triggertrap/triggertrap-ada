@@ -17,11 +17,11 @@ Ada source code
 
 ##1. About Triggertrap Ada
 
-Ada is a project created by Triggertrap (triggertrap.com), designed to be the world's fastest and easiest to use high-speed camera trigger. An initial prototype was created for a Kickstarter project (tri.gg/kickstarter2), and a significant of additional work was completed in order to bring the product to market. 
+Ada is a project created by Triggertrap (http://triggertrap.com), designed to be the world's fastest and easiest to use high-speed camera trigger. An initial prototype was created for a Kickstarter project (tri.gg/kickstarter2), and a significant of additional work was completed in order to bring the product to market. 
 
 Triggertrap was unsuccessful in putting Ada into production, but are releasing the work completed under a GPLv3 open source licence. For full information about where to find all open-source parts of Ada, please see: http://tri.gg/adasource
 
-The electronics and firmware for Ada was developed by Cubik Innovation (cubik-innovation.co.uk). Some additional changes to the firmware was done by Nick Johnson of Arachnid Labs (arachnidlabs.com). 
+The electronics and firmware for Ada was developed by Cubik Innovation (http://cubik-innovation.co.uk). Some additional changes to the firmware was done by Nick Johnson of Arachnid Labs (http://arachnidlabs.com). 
 
 For discussion about this source code, please see the Triggertrap Ada forum - http://forum.triggertrap.com/categories/triggertrap-ada
 
