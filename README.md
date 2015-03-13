@@ -96,6 +96,7 @@ HardwareSerial.h
 	UART header file 
 
 IPAddress.cpp
+
 IPAddress.h
 
 	Contains functions to handle IP addresses used by Arduino
@@ -125,6 +126,7 @@ Server.h
 	Function headers for Ethernet related files
 
 Stream.cpp
+
 Stream.h
 
 	adds parsing methods to Stream class
@@ -171,7 +173,8 @@ Udp.h
 	
 	All files originated from http://arduino.cc/ but files have been modified to fit with the ATXMEGA and have therefore been based on files obtained from http://www.akafugu.jp/posts/products/akafuino_x/
 
-/debug (folder)
+###/debug (folder)
+
 avrdude.exe
 
 	avrdude compiler 
@@ -212,6 +215,7 @@ glcdfont.c
 	Contains the pixel maps for the 5x5 font used in the project
 
 guimenu.cpp
+
 guimenu.h
 
 	Contains all low level functions related to the graphical user interface
@@ -238,6 +242,7 @@ Inputs.h
 	Contains all the functions related to user input from the buttons
 
 LongExposureHDR.cpp
+
 LongExposureHDR.h
 
 	Contains all functions relating to the long exposure high dynamic range mode
@@ -255,6 +260,7 @@ MobileTrigger.cpp
 	Contains a function that sets up the PWM required for mobile out
 
 NewMode.cpp
+
 NewMode.h
 
 	Contains examples for how to create your own mode within the unit
@@ -304,6 +310,7 @@ tt_strings.h
 	Contains the definitions of the individual string location in the data array
 
 Timelapse.cpp
+
 Timelapse.h
 
 	Contains the functions related to the timelapse mode
@@ -331,19 +338,25 @@ EEPROM_LCD_CONTRAST
 
 ### Timelapse Settings
 EEPROM_TIMELAPSE_INTERVAL_HI
+
 EEPROM_TIMELAPSE_INTERVAL_LO
+
 EEPROM_TIMELAPSE_INTERVAL_UNITS
 
 	Setting for the delay between shots in timelapse mode
 
 EEPROM_TIMELAPSE_COUNT_HI
+
 EEPROM_TIMELAPSE_COUNT_LO
+
 EEPROM_TIMELAPSE_COUNT_UNITS
 
 	How many shots in the timelapse train
 
 EEPROM_TIMELAPSE_STARTDELAY_HI
+
 EEPROM_TIMELAPSE_STARTDELAY_LO
+
 EEPROM_TIMELAPSE_STARTDELAY_UNITS
 
 	Delay before the timelapse should start
@@ -354,13 +367,18 @@ EEPROM_TIMELAPSE_ACTIVE
 
 
 ###Timewarp Settings
+
 EEPROM_TIMEWARP_COUNT_HI
+
 EEPROM_TIMEWARP_COUNT_LO
 
 	Holds data for how many shots are in timewarp
 
+
 EEPROM_TIMEWARP_DURATION_HI
+
 EEPROM_TIMEWARP_DURATION_LO
+
 EEPROM_TIMEWARP_DURATION_UNITS
 
 	Holds data for how the duration of the timewarp function
@@ -374,7 +392,9 @@ EEPROM_TIMEWARP_DIRECTION
 	Defines the direction of the timewarp function
 
 EEPROM_TIMEWARP_WAIT_HI
+
 EEPROM_TIMEWARP_WAIT_LO
+
 EEPROM_TIMEWARP_WAIT_UNITS
 
 	Defines the wait before starting time
@@ -389,42 +409,55 @@ EEPROM_BULBRAMP_END_EXPOSURE
 	Relates to Bulbramp end exposure value
 
 EEPROM_BULBRAMP_STARTDELAY_HI
+
 EEPROM_BULBRAMP_STARTDELAY_LO
+
 EEPROM_BULBRAMP_STARTDELAY_UNITS
 
 	Holds data for the bulbramp start delay
 
 EEPROM_BULBRAMP_COUNT_HI
+
 EEPROM_BULBRAMP_COUNT_LO
 
 	Holds data for the bulbramp count
 
 EEPROM_BULBRAMP_DURATION_HI
+
 EEPROM_BULBRAMP_DURATION_LO
+
 EEPROM_BULBRAMP_DURATION_UNITS
 
 	Holds data for the bulbramp duration
 
 ###Star Trail
+
 EEPROM_STARTTRAIL_INTERVAL_HI
+
 EEPROM_STARTTRAIL_INTERVAL_LO
+
 EEPROM_STARTTRAIL_INTERVAL_UNITS
 
 	Holds data for the interval time
 
 EEPROM_STARTTRAIL_SHUTTERSPEED_HI
+
 EEPROM_STARTTRAIL_SHUTTERSPEED_LO
+
 EEPROM_STARTTRAIL_SHUTTERSPEED_UNITS
 
 	Holds data for the star trail shutter speed
 
 EEPROM_STARTTRAIL_COUNT_HI
+
 EEPROM_STARTTRAIL_COUNT_LO
 
 	Holds data for the startrail count
 
 EEPROM_STARTTRAIL_WAIT_HI
+
 EEPROM_STARTTRAIL_WAIT_LO
+
 EEPROM_STARTTRAIL_WAIT_UNITS
 
 	Holds data for Startrail wait time
@@ -439,19 +472,25 @@ EEPROM_HSF_CLOSESHUTTER
 	Data for determining if the shutter should close
 
 EEPROM_HSF_SHUTTERCYCLE_HI
+
 EEPROM_HSF_SHUTTERCYCLE_LO
+
 EEPROM_HSF_SHUTTERCYCLE_UNITS
 
 	Shutter cycle time
 
 EEPROM_HSF_FLASHDELAY_HI
+
 EEPROM_HSF_FLASHDELAY_LO
+
 EEPROM_HSF_FLASHDELAY_UNITS
 
 	Flash delay time
 
 EEPROM_HSF_RESETDELAY_HI
+
 EEPROM_HSF_RESETDELAY_LO
+
 EEPROM_HSF_RESETDELAY_UNITS
 
 	Reset delay time
@@ -461,15 +500,21 @@ EEPROM_HSF_TIMESACTIVE
 	Determines if HSF mode is bound by a time window
 
 EEPROM_HSF_START_HOURS
+
 EEPROM_HSF_START_MINS
+
 EEPROM_HSF_END_HOURS
+
 EEPROM_HSF_END_MINS
 
 	Start and end times for HSF times active
 
 ###Sensor
+
 EEPROM_SENSOR_TRIGDELAY_HI
+
 EEPROM_SENSOR_TRIGDELAY_LO
+
 EEPROM_SENSOR_TRIGDELAY_UNITS
 
 	Sensor trigger delay times
@@ -491,19 +536,25 @@ EEPROM_SENSOR_TIMESACTIVE
 	Determines if sensor mode is bound by a time window
 
 ###Sensor Timelapse
+
 EEPROM_SENSORTLAPSE_DELAY_HI
+
 EEPROM_SENSORTLAPSE_DELAY_LO
+
 EEPROM_SENSORTLAPSE_DELAY_UNITS
 
 	Sensor time lapse delay time
 
 EEPROM_SENSORTLAPSE_INTERVAL_HI
+
 EEPROM_SENSORTLAPSE_INTERVAL_LO
+
 EEPROM_SENSORTLAPSE_INTERVAL_UNITS
 
 	Sensor timelapse interval time
 
 EEPROM_SENSORTLAPSE_CONTINUE_HI
+
 EEPROM_SENSORTLAPSE_CONTINUE_LO
 
 	Determines how many shots to continue for
@@ -526,13 +577,17 @@ EEPROM_SENSORTLAPSE_TIMESACTIVE
 
 ###Sensor Video
 EEPROM_SENSORVIDEO_DELAY_HI
+
 EEPROM_SENSORVIDEO_DELAY_LO
+
 EEPROM_SENSORVIDEO_DELAY_UNITS
 
 	Sensor video setup delay time
 
 EEPROM_SENSORVIDEO_STOPAFTER_HI
+
 EEPROM_SENSORVIDEO_STOPAFTER_LO
+
 EEPROM_SENSORVIDEO_STOPAFTER_UNITS
 
 	Sensor video stop after time setting
@@ -550,11 +605,17 @@ EEPROM_SENSORVIDEO_TRIGGERON
 	Data for stack configuration for this mode
 
 ###Advanced Sensor
+
 EEPROM_ADVSENSOR_CHAN1A
+
 EEPROM_ADVSENSOR_CHAN1B
+
 EEPROM_ADVSENSOR_CHAN2A
+
 EEPROM_ADVSENSOR_CHAN2B
+
 EEPROM_ADVSENSOR_CHAN3A
+
 EEPROM_ADVSENSOR_CHAN3B
 
 	Unused
@@ -565,35 +626,47 @@ EEPROM_ADVSENSOR_TRIGMOBILE
 
 
 ###Settings
+
 EEPROM_CAMERAPREFOCUS_HI
+
 EEPROM_CAMERAPREFOCUS_LO
+
 EEPROM_CAMERAPREFOCUS_UNITS
 
 	Camera prefocus time 
 
 EEPROM_FLASHPULSE_HI
+
 EEPROM_FLASHPULSE_LO
+
 EEPROM_FLASHPULSE_UNITS
 
 	Camera flash pulse time
 
 EEPROM_SHUTTERPULSE_HI
+
 EEPROM_SHUTTERPULSE_LO
+
 EEPROM_SHUTTERPULSE_UNITS
 
 	Shutter open time
 
 EEPROM_TIMELAPSE_STARTHOURS
+
 EEPROM_TIMELAPSE_STARTMINS
+
 EEPROM_TIMELAPSE_ENDHOURS
+
 EEPROM_TIMELAPSE_ENDMINS
 
 	Timelapse start and end times for times active mode
 
-
 EEPROM_SENSORVIDEO_START_HOURS
+
 EEPROM_SENSORVIDEO_START_MINS
+
 EEPROM_SENSORVIDEO_END_HOURS
+
 EEPROM_SENSORVIDEO_END_MINS
 
 	Sensor video start and end times for times active mode
@@ -612,14 +685,19 @@ EEPROM_LEHDR_EVPERSHOT
 	The amount at which the exposure should change between shots
 
 EEPROM_LEHDR_TIMELAPSE_HI
+
 EEPROM_LEHDR_TIMELAPSE_LO
+
 EEPROM_LEHDR_TIMELAPSE_UNITS
 
 	LEHDR timelapseinterval time
 
 EEPROM_SENSOR_TL_START_HOURS
+
 EEPROM_SENSOR_TL_START_MINS
+
 EEPROM_SENSOR_TL_END_HOURS
+
 EEPROM_SENSOR_TL_END_MINS
 
 	Sensor Timelapse start and end times
@@ -629,95 +707,128 @@ EEPROM_SENSORTLAPSE_CONTINUE
 	Defines if sensor timelapse mode will stop on absence of sensor activity/infinite shots/x shots
 
 EEPROM_SENSOR_REST_DELAY_HI
+
 EEPROM_SENSOR_REST_DELAY_LO
+
 EEPROM_SENSOR_RESET_UNITS
 
 	Sensor reset delay time
 
 EEPROM_SENSOR_START_HOURS
+
 EEPROM_SENSOR_START_MINS
+
 EEPROM_SENSOR_END_HOURS
+
 EEPROM_SENSOR_END_MINS
 
 	Sensor start and end times for times active mode
 
 ###Advanced Sensor
+
 EEPROM_ADVSENSOR_CHAN1A_DELAY_HI
+
 EEPROM_ADVSENSOR_CHAN1A_DELAY_LO
+
 EEPROM_ADVSENSOR_CHAN1A_DELAY_UNITS
 
 	Advanced Sensor channel 1A delay time
 
 EEPROM_ADVSENSOR_CHAN1B_DELAY_HI
+
 EEPROM_ADVSENSOR_CHAN1B_DELAY_LO
+
 EEPROM_ADVSENSOR_CHAN1B_DELAY_UNITS
 
 	Advanced Sensor channel 1B delay time
 
 EEPROM_ADVSENSOR_CHAN2A_DELAY_HI
+
 EEPROM_ADVSENSOR_CHAN2A_DELAY_LO
+
 EEPROM_ADVSENSOR_CHAN2A_DELAY_UNITS
 
 	Advanced Sensor channel 2A delay time
 
 EEPROM_ADVSENSOR_CHAN2B_DELAY_HI
+
 EEPROM_ADVSENSOR_CHAN2B_DELAY_LO
+
 EEPROM_ADVSENSOR_CHAN2B_DELAY_UNITS
 
 	Advanced Sensor channel 2B delay time
 
 EEPROM_ADVSENSOR_CHAN3A_DELAY_HI
+
 EEPROM_ADVSENSOR_CHAN3A_DELAY_LO
+
 EEPROM_ADVSENSOR_CHAN3A_DELAY_UNITS
 
 	Advanced Sensor channel 3A delay time
 
 EEPROM_ADVSENSOR_CHAN3B_DELAY_HI
+
 EEPROM_ADVSENSOR_CHAN3B_DELAY_LO
+
 EEPROM_ADVSENSOR_CHAN3B_DELAY_UNITS
 
 	Advanced Sensor channel 1A delay time
 
 
 ###pulse duration
+
 EEPROM_ADVSENSOR_CHAN1A_PULSE_HI
+
 EEPROM_ADVSENSOR_CHAN1A_PULSE_LO
+
 EEPROM_ADVSENSOR_CHAN1A_PULSE_UNITS
 
 	Advanced Sensor channel 1A pulse length
 
 EEPROM_ADVSENSOR_CHAN1B_PULSE_HI
+
 EEPROM_ADVSENSOR_CHAN1B_PULSE_LO
+
 EEPROM_ADVSENSOR_CHAN1B_PULSE_UNITS
 
 	Advanced Sensor channel 1B pulse length
 
 EEPROM_ADVSENSOR_CHAN2A_PULSE_HI
+
 EEPROM_ADVSENSOR_CHAN2A_PULSE_LO
+
 EEPROM_ADVSENSOR_CHAN2A_PULSE_UNITS
 
 	Advanced Sensor channel 2A pulse length
 
 EEPROM_ADVSENSOR_CHAN2B_PULSE_HI
+
 EEPROM_ADVSENSOR_CHAN2B_PULSE_LO
+
 EEPROM_ADVSENSOR_CHAN2B_PULSE_UNITS
 
 	Advanced Sensor channel 2B pulse length
 
 EEPROM_ADVSENSOR_CHAN3A_PULSE_HI
+
 EEPROM_ADVSENSOR_CHAN3A_PULSE_LO
+
 EEPROM_ADVSENSOR_CHAN3A_PULSE_UNITS
 
 	Advanced Sensor channel 3A pulse length
 
 EEPROM_ADVSENSOR_CHAN3B_PULSE_HI
+
 EEPROM_ADVSENSOR_CHAN3B_PULSE_LO
+
 EEPROM_ADVSENSOR_CHAN3B_PULSE_UNITS
 
 	Advanced Sensor channel 3B pulse length
 
 EEPROM_ADVSENSOR_REST_DELAY_HI
+
 EEPROM_ADVSENSOR_REST_DELAY_LO
+
 EEPROM_ADVSENSOR_REST_DELAY_UNITS
 
 	Advanced Sensor reset delay time
@@ -727,14 +838,19 @@ EEPROM_ADVSENSOR_TRIGGER_ON
 	Data for stack configuration for this mode
 
 EEPROM_TIME_HOURS
+
 EEPROM_TIME_MINS
+
 EEPROM_TIME_SECS
 
 	RTC has a roll-over of approx. 18hrs. Alarm is configured to wake the micro before then, save the current time here and reset the counter
 
 EEPROM_NEWMODE_TRIGGERON
+
 EEPROM_NEWMODE_DELAY_HI
+
 EEPROM_NEWMODE_DELAY_LO
+
 EEPROM_NEWMODE_DELAY_UNITS
 
 	Delay times for new mode example
