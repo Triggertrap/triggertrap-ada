@@ -15,8 +15,7 @@ Ada source code
 9. Creating a new mode
 10. Notes on building firmware
 
-
-##1. About Triggertrap Ada
+##1. About Ada
 
 Ada is a project created by Triggertrap (triggertrap.com), designed to be the world's fastest and easiest to use high-speed camera trigger. An initial prototype was created for a Kickstarter project (tri.gg/kickstarter2), and a significant of additional work was completed in order to bring the product to market. 
 
@@ -24,7 +23,7 @@ Triggertrap was unsuccessful in putting Ada into production, but are releasing t
 
 The electronics and firmware for Ada was developed by Cubik Innovation (cubik-innovation.co.uk). Some additional changes to the firmware was done by Nick Johnson of Arachnid Labs (arachnidlabs.com). 
 
-For discussion about this source code, please see the Triggertrap Ada forum - http://forum.triggertrap.com/categories/triggertrap-ada
+For discussion about this source code, please see the Ada forum - http://forum.triggertrap.com/categories/triggertrap-ada
 
 ##2. Licence Information
 
@@ -32,12 +31,13 @@ For licence information, please see Licence.txt.
 
 Please note: 
 * **Triggertrap**  is a trademark of Triggertrap Ltd, and may not be used without prior permission from Triggertrap. 
-* **Ada** is a trademark of Triggertrap Ltd, and may not be used commercially without prior permission from Triggertrap. 
-* **Arduino**, **Adafruit** and other trademarks may be present in the Ada source code. Please ensure that you respect their respective trademarks. 
+* **Timewarp**  is a trademark of Triggertrap Ltd, and may not be used without prior permission from Triggertrap. 
+* **Ada** is a trademark of Triggertrap Ltd, and may not be used *commercially* without prior permission from Triggertrap. 
+* **Arduino**, **Adafruit** and other trademarks may be present in the Ada source code. Please ensure that you respect the respective trademarks and trademark owners. 
 
 ##3. About this document
 
-This project contains all the source files needed to compile the running code on the TriggerTrap Ada device. An outline of what each file is and does is provided below
+This project contains all the source files needed to compile the running code on the Ada device. An outline of what each file is and does is provided below
 
 The project has been developed using files sourced from Atmel, Arduino, Adafruit and akafugu,  plus a number of application specific files written specially for this purpose.
 
