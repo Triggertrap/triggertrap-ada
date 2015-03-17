@@ -1,0 +1,25 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: TRI002_Sensor_issue 4.0.PcbDoc   21/01/2015  09:36:51
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : TRI002_Sensor_issue 4.0-RoundHoles.TXT
+ASCII SlotHoles File : TRI002_Sensor_issue 4.0-SlotHoles.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        15.75mil (0.40005mm)     Round          67               14.50 Inch (368.39 mm)
+T2        19.68mil (0.49987mm)     Slot           3                0.80 Inch (20.22 mm)
+T3        27.56mil (0.70002mm)     Round          6                1.48 Inch (37.63 mm)
+T4        39.37mil (1mm)           Round          2                0.12 Inch (3.05 mm)
+T5        40mil (1.016mm)          Round          19               5.37 Inch (136.28 mm)
+T6        47.24mil (1.1999mm)      Round          4                0.43 Inch (10.88 mm)
+T7        51.18mil (1.29997mm)     Round          3                0.61 Inch (15.55 mm)
+T8        52mil (1.3208mm)         Round          1                0.00 Inch (0.00 mm)
+T9        55.12mil (1.40005mm)     Round          2                0.32 Inch (8.20 mm)
+T10       98.43mil (2.50012mm)     Round          3                3.51 Inch (89.06 mm)
+T11       59.06mil (1.50012mm)     Round          1         NPTH   0.00 Inch (0.00 mm)
+---------------------------------------------------------------------------
+Totals                                            111              27.14 Inch (689.26 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:01

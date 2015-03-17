@@ -1,0 +1,9 @@
+G04:AMPARAMS|DCode=90|XSize=8mil|YSize=8mil|CornerRadius=0mil|HoleSize=0mil|Usage=FLASHONLY|Rotation=90.000|XOffset=0mil|YOffset=0mil|HoleType=Round|Shape=RoundedRectangle|*
+%AMROUNDEDRECTD90*
+21,1,0.00800,0.00800,0,0,90.0*
+21,1,0.00800,0.00800,0,0,90.0*
+1,1,0.00000,0.00400,0.00400*
+1,1,0.00000,0.00400,-0.00400*
+1,1,0.00000,-0.00400,-0.00400*
+1,1,0.00000,-0.00400,0.00400*
+%

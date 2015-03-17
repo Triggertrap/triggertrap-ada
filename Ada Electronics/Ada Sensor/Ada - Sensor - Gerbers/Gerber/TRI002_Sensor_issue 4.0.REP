@@ -1,0 +1,418 @@
+*************************************************************
+FileName = TRI002_Sensor_issue 4.0.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : TRI002_Sensor_issue 4.0.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : TRI002_Sensor_issue 4.0.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : TRI002_Sensor_issue 4.0.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D42
+    D43
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : TRI002_Sensor_issue 4.0.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : TRI002_Sensor_issue 4.0.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D21
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : TRI002_Sensor_issue 4.0.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : TRI002_Sensor_issue 4.0.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : TRI002_Sensor_issue 4.0.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+    D77
+    D78
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : TRI002_Sensor_issue 4.0.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D42
+    D43
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : TRI002_Sensor_issue 4.0.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D21
+    D45
+    D47
+    D48
+    D79
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : TRI002_Sensor_issue 4.0.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D47
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : TRI002_Sensor_issue 4.0.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D47
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 2
+      File : TRI002_Sensor_issue 4.0.GM2
+
+    Adding Layer      : Mechanical 2
+
+
+Used DCodes :
+    D21
+    D45
+    D47
+    D80
+    D81
+    D82
+    D83
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 3
+      File : TRI002_Sensor_issue 4.0.GM3
+
+    Adding Layer      : Mechanical 3
+
+
+Used DCodes :
+    D21
+    D44
+    D47
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : TRI002_Sensor_issue 4.0.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D47
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : TRI002_Sensor_issue 4.0.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 16
+      File : TRI002_Sensor_issue 4.0.GM16
+
+    Adding Layer      : Mechanical 16
+
+
+Used DCodes :
+    D21
+    D47
+*************************************************************
+
+*************************************************************
+Generating : Multi-Layer
+      File : TRI002_Sensor_issue 4.0.GML
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+*************************************************************
+
+*************************************************************
+Generating : Dielectric1
+      File : TRI002_Sensor_issue 4.0.1
+
+    Adding Layer      : Dielectric1
+
+
+Used DCodes :
+*************************************************************
+

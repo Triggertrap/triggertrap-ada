@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: G:\Active\Projects\TRI002\TRI002-SensorBoard\Issue 4.0\TRI002_Sensor_issue 4.0.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=tri002_sensor_issue 4.0-roundholes.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=tri002_sensor_issue 4.0-slotholes.txt|DrillLayers=gtl,gbl

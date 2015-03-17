@@ -1,0 +1,26 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: TRI002_Baseblock_issue 4.0.PcbDoc   10/13/2014  5:44:10 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : TRI002_Baseblock_issue 4.0-RoundHoles.TXT
+ASCII SlotHoles File : TRI002_Baseblock_issue 4.0-SlotHoles.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        15.75mil (0.40005mm)     Round          231              41.53 Inch (1054.84 mm)
+T2        19.68mil (0.49987mm)     Round          2                1.43 Inch (36.29 mm)
+T3        27.56mil (0.70002mm)     Round          6                0.48 Inch (12.24 mm)
+T4        35.43mil (0.89992mm)     Round          8                2.17 Inch (55.13 mm)
+T5        39.37mil (1mm)           Slot           4                287.77 Inch (7309.24 mm)
+T6        40mil (1.016mm)          Round          6                4.25 Inch (107.94 mm)
+T7        47.24mil (1.1999mm)      Round          16               4.01 Inch (101.83 mm)
+T8        52mil (1.3208mm)         Round          7                6.23 Inch (158.24 mm)
+T9        59.06mil (1.50012mm)     Round          5                0.87 Inch (22.21 mm)
+T10       60mil (1.524mm)          Round          2                1.67 Inch (42.52 mm)
+T11       98.43mil (2.50012mm)     Round          5                6.97 Inch (176.93 mm)
+T12       59.06mil (1.50012mm)     Round          6         NPTH   2.63 Inch (66.71 mm)
+---------------------------------------------------------------------------
+Totals                                            298              360.00 Inch (9144.11 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:01
