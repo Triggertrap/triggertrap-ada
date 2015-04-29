@@ -29,7 +29,7 @@
 #include "wiring_private.h"
 #include "HardwareGlobals.h"
 
-#include "Clock.h"	
+//#include "Clock.h"	
 
 // Some versions of avr-gcc on linux defines XXX_bp instead of _gp.
 #if !defined ADC_SWEEP_gp
